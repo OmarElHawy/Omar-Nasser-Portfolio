@@ -142,25 +142,56 @@
   const stageDesc = document.getElementById('stageDesc');
   const stageMetric = document.getElementById('stageMetric');
 
-  nodeButtons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const stage = btn.getAttribute('data-stage');
-      const data = pipelineData[stage];
-      if (!data) return;
+  function activateNode(btn) {
+    const stage = btn.getAttribute('data-stage');
+    const data = pipelineData[stage];
+    if (!data) return;
 
-      nodeButtons.forEach((b) => {
-        b.classList.remove('bg-accent', 'font-bold');
-        b.classList.add('bg-surface');
-        b.setAttribute('aria-selected', 'false');
+    // Reset all nodes to inactive state
+    nodeButtons.forEach((b) => {
+      b.classList.remove('bg-accent', 'text-black');
+      b.classList.add('bg-surface', 'text-ink');
+      b.setAttribute('aria-selected', 'false');
+      // Restore muted label colors for inactive nodes
+      b.querySelectorAll('.pipeline-label').forEach(el => {
+        el.classList.add('text-ink-muted');
+        el.classList.remove('text-ink');
       });
+    });
 
-      btn.classList.remove('bg-surface');
-      btn.classList.add('bg-accent', 'font-bold');
-      btn.setAttribute('aria-selected', 'true');
+    // Activate the tapped/clicked node
+    btn.classList.remove('bg-surface', 'text-ink');
+    btn.classList.add('bg-accent', 'text-black');
+    btn.setAttribute('aria-selected', 'true');
+    // Make labels fully visible on active node
+    btn.querySelectorAll('.pipeline-label').forEach(el => {
+      el.classList.remove('text-ink-muted');
+      el.classList.add('text-ink');
+    });
 
-      if (stageTitle) stageTitle.textContent = data.title;
-      if (stageDesc) stageDesc.textContent = data.desc;
-      if (stageMetric) stageMetric.textContent = data.metric;
+    if (stageTitle) stageTitle.textContent = data.title;
+    if (stageDesc) stageDesc.textContent = data.desc;
+    if (stageMetric) stageMetric.textContent = data.metric;
+  }
+
+  nodeButtons.forEach((btn) => {
+    // Use pointerdown for instant, reliable response on both mouse and touch.
+    // This avoids the 300ms tap delay on mobile and fires before any :hover mutation.
+    btn.addEventListener('pointerdown', (e) => {
+      // Prevent the subsequent synthetic click from firing on touch devices
+      // which would cause a double-activation or state flicker.
+      if (e.pointerType === 'touch') {
+        e.preventDefault();
+      }
+      activateNode(btn);
+    });
+
+    // Keep 'click' as fallback for keyboard (Enter/Space) activation
+    btn.addEventListener('click', (e) => {
+      // Only handle keyboard-driven clicks; pointer-driven ones are handled above
+      if (e.detail === 0) {
+        activateNode(btn);
+      }
     });
   });
 

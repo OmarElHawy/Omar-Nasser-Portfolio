@@ -151,3 +151,28 @@ select:focus-visible {
     color: black !important;
   }
 }
+
+/* -----------------------------------------------------------------------
+   Mobile Touch Fix: Pipeline Node Widget
+   On touch-primary devices, :hover pseudo-class "sticks" after a tap,
+   which can override the JS-applied bg-accent active state. We disable
+   hover-only background transitions on touch devices and let JS
+   handle all active state toggling exclusively via class changes.
+   ----------------------------------------------------------------------- */
+
+/* Eliminate tap delay on interactive elements across all devices */
+.pipeline-node {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* On touch-primary devices (hover: none), disable the hover background
+   override so only the JS-applied bg-accent class controls active state */
+@media (hover: none) {
+  .pipeline-node:hover {
+    background-color: inherit !important;
+  }
+}
+
