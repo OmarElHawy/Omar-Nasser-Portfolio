@@ -127,7 +127,7 @@
     },
     guard: {
       title: "05: Synthesis & Grounding Guardrails",
-      desc: "Deterministic regular expression evaluation and strict context grounding that reduces hallucinations with grounding checks and guardrails.",
+      desc: "Deterministic regular expression evaluation and strict context grounding that helps reduce hallucinations.",
       metric: "LCEL GROUNDING"
     },
     serve: {
