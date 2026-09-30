@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing and Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build & Deploy
+dist/
+build/
+.vercel
+.output
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Development artifacts (not needed in production)
+lighthouse-*.json
+lighthouse-*.html
+screenshot_*.png
+final_preview.png
+verified_desktop_preview.png
+extract_css.mjs
+tailwind.config.js
+css/tailwind.input.css
