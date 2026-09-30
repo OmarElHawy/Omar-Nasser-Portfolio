@@ -33,3 +33,4 @@ verified_desktop_preview.png
 extract_css.mjs
 tailwind.config.js
 css/tailwind.input.css
+test_runner.mjs
