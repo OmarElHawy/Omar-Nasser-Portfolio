@@ -217,6 +217,32 @@
       ],
       metrics: "Classification Accuracy: 98.75% | AUC-ROC: 0.9999 | Dimensionality: PCA 95% Retention",
       lessons: "Fusing deep convolutional representations with classical texture statistics (LBP/GLCM) significantly outperforms stand-alone deep learning on specialized microscopic datasets."
+    },
+    epl_rag: {
+      category: "GENERATIVE AI / RAG",
+      title: "Egyptian Premier League RAG Assistant",
+      solution: "Ingests Kaggle CSVs (match results, goal events, referee/stadium records) and Wikipedia JSON summaries into ChromaDB with 4,434 semantic chunks across 10 chunk types. FastAPI backend handles retrieval with deterministic guards that bypass the LLM for high-precision queries. Streamlit frontend provides an interactive chat interface with source attribution (Wikipedia vs Kaggle).",
+      highlights: [
+        "Implemented two-layer team name normalization handling 52 aliases and 4 official renames (e.g., Al Assiouty Sport → Pyramids, 2018-19).",
+        "Built deterministic guards for high-precision queries, reducing LLM dependency and improving response accuracy.",
+        "Achieved 40/40 success rate on a 40-question test battery covering match results, standings, top scorers, and records.",
+        "Source attribution labels (Wikipedia / Kaggle / Wikipedia+Kaggle) allow users to verify answer provenance."
+      ],
+      metrics: "Chunks: 4,434 | Test Battery: 40/40 Success | Architecture: FastAPI + Streamlit + ChromaDB + Ollama",
+      lessons: "Deterministic guards and source attribution are critical for building trust in RAG systems over structured sports data."
+    },
+    ecommerce_rag: {
+      category: "GENERATIVE AI / RAG",
+      title: "RAG-Based E-Commerce Customer Support Chatbot",
+      solution: "A privacy-first, local AI support ecosystem for e-commerce. Ingests a store's internal FAQ knowledge base into ChromaDB vector store. Ollama runs the embedding and chat models entirely on-premise, eliminating cloud API costs and data privacy concerns. Streamlit provides an intuitive chat interface.",
+      highlights: [
+        "Built a fully local RAG pipeline with zero API dependencies, ensuring customer data never leaves the premise.",
+        "Context-aware answers pulled directly from the store's FAQ knowledge base, eliminating hallucinations.",
+        "Integrated Ollama for local LLM inference and ChromaDB for efficient semantic retrieval.",
+        "Deployed with Streamlit for a lightweight, interactive customer-facing chat interface."
+      ],
+      metrics: "Deployment: 100% Local | Cloud Cost: $0 | Hallucination: Eliminated via RAG Grounding",
+      lessons: "Local RAG architectures can deliver enterprise-grade customer support without compromising data privacy or incurring recurring cloud costs."
     }
   };
 
