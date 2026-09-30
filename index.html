@@ -1,1286 +1,1285 @@
-﻿<!DOCTYPE html>
-<html class="light" lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  
-  <!-- Primary Meta Tags -->
-  <title>Omar Nasser — AI Engineer | RAG, LLMs &amp; Computer Vision</title>
-  <meta name="title" content="Omar Nasser — AI Engineer | RAG, LLMs &amp; Computer Vision"/>
-  <meta name="description" content="AI Engineer specializing in verifiable RAG pipelines, fine-tuned speech models, production computer vision, and autonomous workflow orchestrations. Based in Alexandria, Egypt."/>
-  <meta name="keywords" content="Omar Nasser, Omar Nasser Mahmoud, AI Engineer, Machine Learning, RAG, LangChain, Whisper, Computer Vision, Alexandria Egypt, E-JUST, n8n, Deep Learning, Speech to Text"/>
-  <meta name="author" content="Omar Nasser Mahmoud"/>
-  <meta name="robots" content="index, follow"/>
-  <meta name="theme-color" content="#e6e5de"/>
-  <link rel="canonical" href="https://omarelhawy.github.io/omar-nasser-portfolio/"/>
-
-  <!-- Open Graph / Facebook / LinkedIn -->
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://omarelhawy.github.io/omar-nasser-portfolio/"/>
-  <meta property="og:site_name" content="Omar Nasser Portfolio"/>
-  <meta property="og:title" content="Omar Nasser — AI Engineer | RAG, LLMs &amp; Computer Vision"/>
-  <meta property="og:description" content="AI Engineer specializing in verifiable RAG pipelines, fine-tuned speech models, production computer vision, and autonomous workflow orchestrations. Based in Alexandria, Egypt."/>
-  <meta property="og:image" content="assets/og-image.png"/>
-  <meta property="og:locale" content="en_US"/>
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:url" content="https://omarelhawy.github.io/omar-nasser-portfolio/"/>
-  <meta name="twitter:title" content="Omar Nasser — AI Engineer | RAG, LLMs &amp; Computer Vision"/>
-  <meta name="twitter:description" content="AI Engineer specializing in verifiable RAG pipelines, fine-tuned speech models, production computer vision, and autonomous workflow orchestrations. Based in Alexandria, Egypt."/>
-  <meta name="twitter:image" content="assets/og-image.png"/>
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
-  <link rel="apple-touch-icon" href="assets/favicon.svg"/>
-
-  <!-- Google Fonts: Anton, Inter, JetBrains Mono (preloaded for performance) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"/>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"/>
-
-  <!-- Compiled Tailwind CSS (production build — no CDN dependency) -->
-  <link rel="stylesheet" href="css/tailwind.compiled.css"/>
-
-  <!-- Custom Design Tokens & Component Styles -->
-  <link rel="stylesheet" href="css/styles.css"/>
-
-  <!-- JSON-LD Structured Data for Rich Search Snippets -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Omar Nasser Mahmoud",
-    "jobTitle": "AI Engineer",
-    "url": "https://omarelhawy.github.io/omar-nasser-portfolio/",
-    "email": "omarr.elhawyy@gmail.com",
-    "telephone": "+201285407011",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Alexandria",
-      "addressCountry": "Egypt"
-    },
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "Egypt-Japan University of Science and Technology (E-JUST)"
-    },
-    "sameAs": [
-      "https://github.com/OmarElHawy",
-      "https://www.linkedin.com/in/omar-nasser-aab951303/"
-    ],
-    "knowsAbout": [
-      "Artificial Intelligence",
-      "Retrieval-Augmented Generation (RAG)",
-      "Large Language Models (LLMs)",
-      "Computer Vision",
-      "Speech-to-Text (STT)",
-      "LangChain",
-      "FAISS",
-      "PyTorch",
-      "n8n Workflow Automation"
-    ]
-  }
-  </script>
-</head>
-<body class="bg-canvas text-ink font-sans antialiased selection:bg-accent selection:text-ink pb-24 md:pb-0">
-
-  <!-- TOP ELECTRIC MINT ANNOUNCEMENT BAR -->
-  <aside class="sticky top-0 z-50 bg-accent text-ink border-b-2 border-black px-4 py-2 text-center overflow-x-auto whitespace-nowrap">
-    <a class="inline-flex items-center justify-center gap-2 text-xs font-mono font-bold uppercase tracking-wider hover:underline" href="#contact">
-      <span class="inline-block w-2 h-2 rounded-full bg-black animate-ping" aria-hidden="true"></span>
-      AVAILABLE FOR FREELANCE &amp; AI CONTRACTS — UPWORK &amp; DIRECT ENQUIRIES →
-    </a>
-  </aside>
-
-  <!-- EDITORIAL PILL APP BAR -->
-  <header class="sticky top-8 z-40 px-3 sm:px-4 py-2 pointer-events-none">
-    <div class="pointer-events-auto max-w-5xl mx-auto bg-canvas/90 backdrop-blur-md border-2 border-black rounded-2xl px-4 py-2.5 flex justify-between items-center koyeb-pill shadow-brutal">
-      <a class="flex items-center gap-2.5 group" href="#hero" aria-label="Omar Nasser Home">
-        <span class="w-3 h-3 bg-accent border border-black transition-transform group-hover:rotate-45" aria-hidden="true"></span>
-        <span class="text-base font-bold tracking-tight text-ink font-mono uppercase">OMAR NASSER // AI ENG</span>
-      </a>
-      
-      <!-- Desktop Nav -->
-      <nav class="hidden md:flex items-center gap-6 text-xs font-mono font-medium tracking-wide" aria-label="Desktop Navigation">
-        <a class="hover:text-black transition-colors" href="#metrics">Empirical Proof</a>
-        <a class="hover:text-black transition-colors" href="#work">Projects</a>
-        <a class="hover:text-black transition-colors" href="#methodology">System</a>
-        <a class="hover:text-black transition-colors" href="#services">Services</a>
-        <a class="hover:text-black transition-colors" href="#about">About</a>
-        <a class="px-4 py-1.5 rounded-lg bg-surface-dark text-white font-mono text-xs uppercase tracking-wider shadow-stamped hover:bg-black transition-all" href="#contact">Contact</a>
-      </nav>
-
-      <!-- Mobile Right Controls -->
-      <div class="flex items-center gap-2 md:hidden">
-        <a class="px-3 py-1 bg-surface-dark text-white font-mono text-[11px] font-bold uppercase rounded-lg shadow-stamped" href="#contact">
-          Contact
-        </a>
-        <button aria-label="Toggle Menu" class="p-1.5 border border-black bg-surface rounded-lg hover:bg-accent transition-colors" id="drawerToggle">
-          <span class="material-symbols-outlined text-xl" aria-hidden="true">menu</span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- MOBILE SLIDE-OUT DRAWER -->
-  <div class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden transition-opacity" id="drawerOverlay" aria-hidden="true"></div>
-  <aside class="fixed inset-y-0 right-0 w-80 z-50 bg-canvas border-l-2 border-black shadow-2xl flex flex-col h-full p-5 space-y-4 translate-x-full transition-transform duration-300 ease-in-out" id="mobileDrawer" aria-label="Mobile Navigation Drawer">
-    <div class="flex items-center justify-between pb-3 border-b-2 border-black">
-      <div class="flex items-center gap-2 font-mono text-xs font-bold uppercase">
-        <span class="w-3 h-3 bg-accent border border-black" aria-hidden="true"></span>
-        <span>INDEX &amp; SPECS</span>
-      </div>
-      <button aria-label="Close Menu" class="p-1 border border-black rounded hover:bg-accent" id="drawerClose">
-        <span class="material-symbols-outlined text-lg" aria-hidden="true">close</span>
-      </button>
-    </div>
-    
-    <div class="p-3 bg-surface-card border-2 border-black rounded-lg">
-      <div class="font-bold text-sm text-black">Omar Nasser Mahmoud</div>
-      <div class="text-[11px] font-mono text-ink-muted mt-0.5 font-medium">E-JUST • AI &amp; Data Science</div>
-      <div class="text-[10px] font-mono uppercase bg-accent inline-block px-1.5 py-0.5 border border-black mt-2 font-bold">
-        STATUS: OPEN TO WORK
-      </div>
-    </div>
-
-    <nav class="flex-1 space-y-2 font-mono text-xs font-semibold" aria-label="Drawer Links">
-      <a class="drawer-link flex items-center justify-between p-3 rounded-lg border border-black bg-surface hover:bg-accent text-black" href="#hero">
-        <span>00 // Overview</span>
-        <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
-      </a>
-      <a class="drawer-link flex items-center justify-between p-3 rounded-lg border border-black bg-surface hover:bg-accent text-black" href="#metrics">
-        <span>01 // Empirical Proof</span>
-        <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
-      </a>
-      <a class="drawer-link flex items-center justify-between p-3 rounded-lg border border-black bg-surface hover:bg-accent text-black" href="#work">
-        <span>02 // Selected Projects</span>
-        <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
-      </a>
-      <a class="drawer-link flex items-center justify-between p-3 rounded-lg border border-black bg-surface hover:bg-accent text-black" href="#methodology">
-        <span>03 // How I Think</span>
-        <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
-      </a>
-      <a class="drawer-link flex items-center justify-between p-3 rounded-lg border border-black bg-surface hover:bg-accent text-black" href="#services">
-        <span>04 // What I Can Build</span>
-        <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
-      </a>
-      <a class="drawer-link flex items-center justify-between p-3 rounded-lg border border-black bg-surface hover:bg-accent text-black" href="#experience">
-        <span>05 // Career Track</span>
-        <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
-      </a>
-      <a class="drawer-link flex items-center justify-between p-3 rounded-lg border border-black bg-surface hover:bg-accent text-black" href="#about">
-        <span>06 // About Omar</span>
-        <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
-      </a>
-      <a class="drawer-link flex items-center justify-between p-3 rounded-lg border border-black bg-surface hover:bg-accent text-black" href="#contact">
-        <span>07 // Contact</span>
-        <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
-      </a>
-    </nav>
-
-    <div class="pt-3 border-t-2 border-black space-y-1.5 font-mono text-xs">
-      <a class="flex items-center justify-between text-ink hover:underline" href="https://github.com/OmarElHawy" rel="noopener noreferrer" target="_blank">
-        <span>github.com/OmarElHawy</span>
-        <span class="material-symbols-outlined text-xs" aria-hidden="true">north_east</span>
-      </a>
-      <a class="flex items-center justify-between text-ink hover:underline" href="https://www.linkedin.com/in/omar-nasser-aab951303/" rel="noopener noreferrer" target="_blank">
-        <span>linkedin.com/in/omar-nasser</span>
-        <span class="material-symbols-outlined text-xs" aria-hidden="true">north_east</span>
-      </a>
-    </div>
-  </aside>
-
-  <main class="space-y-16 sm:space-y-24">
-    <!-- HERO SECTION -->
-    <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-4 sm:pt-8" id="hero">
-      <div class="space-y-6">
-        <!-- Eyebrow Pill -->
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface border-2 border-black text-xs font-mono font-bold tracking-tight shadow-brutal">
-          <span class="w-2.5 h-2.5 rounded-full bg-accent border border-black" aria-hidden="true"></span>
-          <span>OMAR NASSER — AI &amp; DATA SCIENCE // ALEXANDRIA, EGYPT</span>
-        </div>
-
-        <!-- Big Brutalist Anton Headline -->
-        <div class="space-y-3">
-          <h1 class="anton-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-black leading-[1.1]">
-            I BUILD AI SYSTEMS THAT <span class="bg-accent px-1.5 underline decoration-black decoration-4 inline-block mt-1 sm:mt-0">ACTUALLY WORK.</span>
-          </h1>
-          <div class="font-mono text-xs sm:text-sm font-bold uppercase tracking-wider text-ink border-l-4 border-black pl-3 py-1">
-            MACHINE LEARNING • DEEP LEARNING • TRANSFORMERS •  AI Automation• GENERATIVE AI • RAG
-          </div>
-        </div>
-
-        <!-- Narrative Positioning -->
-        <p class="text-base sm:text-lg text-ink-soft max-w-3xl leading-relaxed font-normal">
-          AI &amp; Data Science undergraduate at <strong class="text-black font-semibold">Egypt-Japan University of Science and Technology (E-JUST)</strong>. Specializing in verifiable RAG pipelines, fine-tuned speech models, production computer vision, and autonomous workflow orchestrations.
-        </p>
-
-        <!-- Stamped Action CTAs -->
-        <div class="flex flex-wrap items-center gap-3 pt-2">
-          <a class="px-5 py-3 rounded-lg bg-surface-dark hover:bg-black text-white font-mono text-xs sm:text-sm font-bold uppercase tracking-wider shadow-stamped inline-flex items-center gap-2 border border-black transition-all" href="#work">
-            <span>Explore Selected Work</span>
-            <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_downward</span>
-          </a>
-          <a class="px-5 py-3 rounded-lg bg-accent hover:bg-accent-deep text-black font-mono text-xs sm:text-sm font-bold uppercase tracking-wider shadow-stamped border-2 border-black inline-flex items-center gap-2 transition-all" href="#contact">
-            <span>Let's Talk</span>
-            <span class="material-symbols-outlined text-sm" aria-hidden="true">send</span>
-          </a>
-          <a class="px-4 py-3 rounded-lg bg-surface hover:bg-surface-card text-black font-mono text-xs font-bold border border-black inline-flex items-center gap-1.5" href="https://github.com/OmarElHawy" rel="noopener noreferrer" target="_blank" aria-label="View Omar Nasser GitHub profile in new tab">
-            <span class="material-symbols-outlined text-sm" aria-hidden="true">code</span>
-            <span>GitHub Profile ↗</span>
-          </a>
-        </div>
-
-        <!-- INTERACTIVE SMARTDOC RAG AGENT HERO WIDGET -->
-        <div class="mt-8 rounded-xl bg-surface border-2 border-black shadow-brutal-lg overflow-hidden">
-          <div class="bg-surface-dark text-white px-4 py-3 border-b-2 border-black flex flex-wrap items-center justify-between gap-2 text-xs font-mono font-bold">
-            <div class="flex items-center gap-2">
-              <span class="w-3 h-3 rounded-full bg-accent border border-black" aria-hidden="true"></span>
-              <span class="tracking-wide">SMARTDOC RAG PIPELINE ARCHITECTURE</span>
-            </div>
-            <div class="flex items-center gap-3 text-[11px] text-accent font-mono">
-              <span>LATENCY: &lt;142ms</span>
-              <span class="text-white">|</span>
-              <span>FAISS 1536-DIM</span>
-              <span class="text-white">|</span>
-              <span class="bg-accent text-black px-1.5 py-0.5 rounded font-bold">LCEL GUARDRAIL: ACTIVE</span>
-            </div>
-          </div>
-
-          <!-- Flow nodes container -->
-          <div class="p-4 sm:p-6 bg-canvas-high space-y-4">
-            <div class="text-[11px] font-mono text-ink-muted uppercase font-bold tracking-wider">
-              [TAP NODES TO INSPECT PRODUCTION SPECIFICATIONS]
-            </div>
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2" id="pipelineNodes" role="tablist" aria-label="RAG Architecture Nodes">
-              <button class="pipeline-node text-left p-2.5 rounded-lg border-2 border-black bg-accent text-black transition-all focus:outline-none" data-stage="ingest" role="tab" aria-selected="true" aria-controls="stageDetails">
-                <span class="text-[10px] font-mono uppercase block font-bold">01 / SOURCE</span>
-                <span class="font-bold text-xs block leading-tight mt-0.5">DOCUMENT</span>
-                <span class="text-[10px] font-mono text-ink block mt-1">PDF • DOCX</span>
-              </button>
-              <button class="pipeline-node text-left p-2.5 rounded-lg border-2 border-black bg-surface text-ink hover:bg-canvas-card transition-all focus:outline-none" data-stage="chunk" role="tab" aria-selected="false" aria-controls="stageDetails">
-                <span class="text-[10px] font-mono uppercase text-ink-muted block font-semibold">02 / CHUNK</span>
-                <span class="font-bold text-xs block leading-tight mt-0.5">RECURSIVE</span>
-                <span class="text-[10px] font-mono text-ink-muted block mt-1">500 char token</span>
-              </button>
-              <button class="pipeline-node text-left p-2.5 rounded-lg border-2 border-black bg-surface text-ink hover:bg-canvas-card transition-all focus:outline-none" data-stage="faiss" role="tab" aria-selected="false" aria-controls="stageDetails">
-                <span class="text-[10px] font-mono uppercase text-ink-muted block font-semibold">03 / INDEX</span>
-                <span class="font-bold text-xs block leading-tight mt-0.5">FAISS VECTOR</span>
-                <span class="text-[10px] font-mono text-ink-muted block mt-1">1536-dim FlatL2</span>
-              </button>
-              <button class="pipeline-node text-left p-2.5 rounded-lg border-2 border-black bg-surface text-ink hover:bg-canvas-card transition-all focus:outline-none" data-stage="retrieve" role="tab" aria-selected="false" aria-controls="stageDetails">
-                <span class="text-[10px] font-mono uppercase text-ink-muted block font-semibold">04 / RETRIEVER</span>
-                <span class="font-bold text-xs block leading-tight mt-0.5">LCEL CHAIN</span>
-                <span class="text-[10px] font-mono text-ink-muted block mt-1">Cosine k=4</span>
-              </button>
-              <button class="pipeline-node text-left p-2.5 rounded-lg border-2 border-black bg-surface text-ink hover:bg-canvas-card transition-all focus:outline-none" data-stage="guard" role="tab" aria-selected="false" aria-controls="stageDetails">
-                <span class="text-[10px] font-mono uppercase text-ink-muted block font-semibold">05 / LLM SYNTHESIS</span>
-                <span class="font-bold text-xs block leading-tight mt-0.5">MISTRAL / LLAMA</span>
-                <span class="text-[10px] font-mono text-ink-muted block mt-1">Regex Grounding</span>
-              </button>
-              <button class="pipeline-node text-left p-2.5 rounded-lg border-2 border-black bg-surface text-ink hover:bg-canvas-card transition-all focus:outline-none" data-stage="serve" role="tab" aria-selected="false" aria-controls="stageDetails">
-                <span class="text-[10px] font-mono uppercase text-ink-muted block font-semibold">06 / SERVE</span>
-                <span class="font-bold text-xs block leading-tight mt-0.5">GROUNDED ANSWER</span>
-                <span class="text-[10px] font-mono text-ink-muted block mt-1">FastAPI + Gradio</span>
-              </button>
-            </div>
-
-            <!-- Explainer box -->
-            <div class="p-3.5 bg-surface border-2 border-black rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs" id="stageDetails" role="tabpanel">
-              <div class="flex items-start gap-2.5">
-                <span class="material-symbols-outlined text-black text-xl mt-0.5" aria-hidden="true">terminal</span>
-                <div>
-                  <div class="font-mono text-black font-bold uppercase" id="stageTitle">01: Document Ingestion (PDF / DOCX)</div>
-                  <div class="text-ink-soft mt-0.5" id="stageDesc">Robust extraction supporting multi-page PDF documents and nested tables, filtering extraneous formatting artifacts prior to chunking.</div>
-                </div>
-              </div>
-              <div class="shrink-0 font-mono text-[11px] bg-accent px-2 py-1 border border-black font-bold text-black" id="stageMetric">
-                THROUGHPUT: 14 DOCS/SEC
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- BUILT. TESTED. MEASURED. (HIGH-IMPACT DARK METRIC BAND) -->
-    <section class="bg-surface-dark text-white border-y-4 border-black py-12 px-4 sm:px-6" id="metrics">
-      <div class="max-w-5xl mx-auto space-y-8">
-        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b-2 border-white/20 pb-4">
-          <div>
-            <span class="text-xs font-mono uppercase font-bold text-accent tracking-widest">// EMPIRICAL PROOF &amp; BENCHMARKS</span>
-            <h2 class="anton-heading text-4xl sm:text-5xl md:text-6xl text-white mt-1">BUILT. TESTED. MEASURED.</h2>
-          </div>
-          <p class="text-xs font-mono text-gray-300 max-w-xs">
-            Measured evaluation scores across dialectal speech, biomedical computer vision, and machine learning models.
-          </p>
-        </div>
-
-        <!-- Metric Grid -->
-        <div class="grid grid-cols-2 md:grid-cols-5 gap-3.5 sm:gap-4">
-          <!-- Metric 1 -->
-          <div class="p-4 bg-surface-darker border-2 border-white/20 rounded-xl space-y-1 relative group hover:border-accent transition-colors">
-            <span class="anton-heading text-4xl sm:text-5xl text-accent block">24.24%</span>
-            <div class="text-xs font-bold uppercase tracking-tight text-white font-mono">WER (Word Error Rate)</div>
-            <div class="text-[11px] text-gray-300 font-mono">Whisper-small fine-tune on Egyptian dialect</div>
-          </div>
-          <!-- Metric 2 -->
-          <div class="p-4 bg-surface-darker border-2 border-white/20 rounded-xl space-y-1 relative group hover:border-accent transition-colors">
-            <span class="anton-heading text-4xl sm:text-5xl text-accent block">11.14%</span>
-            <div class="text-xs font-bold uppercase tracking-tight text-white font-mono">CER (Char Error Rate)</div>
-            <div class="text-[11px] text-gray-300 font-mono">Diacritic normalized transcription accuracy</div>
-          </div>
-          <!-- Metric 3 -->
-          <div class="p-4 bg-surface-darker border-2 border-white/20 rounded-xl space-y-1 relative group hover:border-accent transition-colors">
-            <span class="anton-heading text-4xl sm:text-5xl text-accent block">98.75%</span>
-            <div class="text-xs font-bold uppercase tracking-tight text-white font-mono">Accuracy</div>
-            <div class="text-[11px] text-gray-300 font-mono">White blood cell subtype multi-class</div>
-          </div>
-          <!-- Metric 4 -->
-          <div class="p-4 bg-surface-darker border-2 border-white/20 rounded-xl space-y-1 relative group hover:border-accent transition-colors">
-            <span class="anton-heading text-4xl sm:text-5xl text-accent block">0.9999</span>
-            <div class="text-xs font-bold uppercase tracking-tight text-white font-mono">AUC-ROC Metric</div>
-            <div class="text-[11px] text-gray-300 font-mono">EfficientNetB0 deep features + SVM</div>
-          </div>
-          <!-- Metric 5 -->
-          <div class="p-4 bg-surface-darker border-2 border-white/20 rounded-xl space-y-1 col-span-2 md:col-span-1 relative group hover:border-accent transition-colors">
-            <span class="anton-heading text-4xl sm:text-5xl text-white block">20,000</span>
-            <div class="text-xs font-bold uppercase tracking-tight text-accent font-mono">Audio Samples</div>
-            <div class="text-[11px] text-gray-300 font-mono">Mozilla Common Voice Arabic corpus</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SELECTED WORK / EDITORIAL CASE STUDIES -->
-    <section class="max-w-5xl mx-auto px-4 sm:px-6 space-y-10" id="work">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b-2 border-black pb-4">
-        <div>
-          <span class="text-xs font-mono text-black font-bold uppercase tracking-wider">// SELECTED PROJECTS</span>
-          <h2 class="anton-heading text-4xl sm:text-5xl md:text-6xl text-black mt-1">ENGINEERED PRODUCTION SYSTEMS</h2>
-        </div>
-        <p class="text-xs font-mono text-ink-muted">Validated codebases, architecture specs, and benchmarked metrics</p>
-      </div>
-
-      <div class="space-y-10">
-        <!-- PROJECT 01: ARABIC SPEECH-TO-TEXT -->
-        <article class="bg-surface rounded-2xl border-2 border-black shadow-brutal-lg overflow-hidden">
-          <div class="bg-black text-white px-5 py-3 flex flex-wrap items-center justify-between gap-2 border-b-2 border-black">
-            <span class="text-xs font-mono font-bold text-accent uppercase tracking-wider">01 // SPEECH AI &amp; NLP</span>
-            <div class="flex items-center gap-2">
-              <span class="px-2 py-0.5 rounded bg-accent text-black font-mono text-[11px] font-bold">24.24% WER</span>
-              <span class="px-2 py-0.5 rounded bg-white text-black font-mono text-[11px] font-bold">11.14% CER</span>
-            </div>
-          </div>
-          <div class="p-5 sm:p-7 space-y-6">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-              <div class="lg:col-span-7 space-y-4">
-                <h3 class="anton-heading text-2xl sm:text-3xl md:text-4xl text-black">
-                  ARABIC (EGYPTIAN) SPEECH TO TEXT
-                </h3>
-                <p class="text-sm text-ink-soft leading-relaxed">
-                  Fine-tuned OpenAI’s Whisper-small (244M parameters) on 20,000 Mozilla Common Voice audio recordings for dialectal Egyptian Arabic. Dialectal speech breaks vanilla models due to colloquial phonetic shifts; this implementation engineered a robust audio processing pipeline featuring 16kHz resampling, log-mel spectrogram extraction, Arabic diacritic removal, and FP16 PyTorch training on RTX 3060 with Gradio streaming inference.
-                </p>
-                <div class="flex flex-wrap gap-2 pt-1 font-mono text-xs">
-                  <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">Whisper-small (244M)</span>
-                  <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">PyTorch</span>
-                  <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">FP16 Precision</span>
-                  <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">16kHz Mel-Spec</span>
-                  <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">Gradio</span>
-                </div>
-                <div class="flex flex-wrap items-center gap-3 pt-3">
-                  <button class="px-5 py-2.5 rounded-lg bg-surface-dark text-white hover:bg-black font-mono text-xs font-bold uppercase shadow-stamped border border-black inline-flex items-center gap-1.5 transition-all" onclick="openCaseStudy('whisper')">
-                    <span>View Case Study</span>
-                    <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
-                  </button>
-                  <a class="px-4 py-2.5 rounded-lg bg-surface hover:bg-canvas-card border-2 border-black font-mono text-xs font-bold inline-flex items-center gap-1.5" href="https://github.com/OmarElHawy/Whisper-Arabic-Speech-Recognition" rel="noopener noreferrer" target="_blank" aria-label="View Arabic Speech-to-Text GitHub Code">
-                    <span class="material-symbols-outlined text-sm" aria-hidden="true">code</span>
-                    <span>GitHub Code</span>
-                  </a>
-                </div>
-              </div>
-
-              <!-- Multi-slot interactive visual card -->
-              <div class="lg:col-span-5 space-y-3">
-                <div class="bg-surface-dark border-2 border-black rounded-xl overflow-hidden shadow-brutal">
-                  <div class="px-3 py-2 bg-black border-b border-white/20 flex items-center justify-between text-[11px] font-mono text-white">
-                    <span class="text-accent font-bold">[GRADIO DEMO] INFERENCE UI</span>
-                    <span class="text-gray-400">244M Weights</span>
-                  </div>
-                  <div class="p-2.5">
-                    <img alt="Arabic Speech to text Gradio UI screenshot demonstrating audio waveform and live transcription" class="w-full h-40 sm:h-48 object-cover rounded border border-white/20" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoF7hrc5AeYke9pBEtvc5cWAS-t8GkqUS4wsmOdWJ3FTyGCWTfERjG7YHiHbfC-SdbNFeE8_Cs6GNtywVVlGmj3KeoWcF1WwhdJDpfKN97oWtyC2GP_Uyd0TJWItSf88EOZcWNxR3WxhIy2I7go7_yskwa3kcouCiowtEfSve_pfo8W_jdvsPoc9UxXbja-qHZGRreAPA1-TOOcxKzwBob4u_2BNfkZ1SC-TNzuudf636KJ1TyJ8BR"/>
-                  </div>
-                </div>
-                <div class="grid grid-cols-2 gap-2 text-xs font-mono">
-                  <div class="p-3 bg-canvas-high border-2 border-black rounded-lg">
-                    <span class="text-[10px] text-ink-muted uppercase block font-bold">[SPECTROGRAM]</span>
-                    <span class="text-black font-bold block mt-0.5">16kHz Mel-Spec</span>
-                    <span class="text-[11px] text-ink-soft">Autoregressive</span>
-                  </div>
-                  <div class="p-3 bg-canvas-high border-2 border-black rounded-lg">
-                    <span class="text-[10px] text-ink-muted uppercase block font-bold">[BENCHMARK]</span>
-                    <span class="text-black font-bold block mt-0.5">24.24% WER</span>
-                    <span class="text-[11px] text-ink-muted">Baseline was 48.6%</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 02: SMARTDOC PRODUCTION RAG AGENT -->
-        <article class="bg-surface rounded-2xl border-2 border-black shadow-brutal-lg overflow-hidden">
-          <div class="bg-black text-white px-5 py-3 flex flex-wrap items-center justify-between gap-2 border-b-2 border-black">
-            <span class="text-xs font-mono font-bold text-accent uppercase tracking-wider">02 // GENERATIVE AI / RAG</span>
-            <span class="px-2 py-0.5 rounded bg-white text-black font-mono text-[11px] font-bold">NVIDIA DLI Workshop</span>
-          </div>
-          <div class="p-5 sm:p-7 space-y-6">
-            <div class="space-y-3">
-              <h3 class="anton-heading text-2xl sm:text-3xl md:text-4xl text-black">
-                SMARTDOC PRODUCTION RAG AGENT
-              </h3>
-              <p class="text-sm text-ink-soft leading-relaxed max-w-3xl">
-                A verifiable RAG assistant developed during NVIDIA DLI advanced workshops for navigating dense multi-format technical manuals (PDFs, DOCX, spec sheets). Implements recursive semantic chunking, normalized cosine FAISS vector similarity search, and LangChain LCEL orchestration with regex safety grounding to eliminate hallucinations.
-              </p>
-            </div>
-
-            <!-- Pipeline Breakdown Card -->
-            <div class="p-4 bg-canvas-high border-2 border-black rounded-xl space-y-2">
-              <div class="text-[11px] font-mono uppercase font-bold text-black tracking-wider">
-                [SYSTEM TOPOLOGY] Document Ingestion &amp; Grounding
-              </div>
-              <div class="flex flex-wrap items-center gap-2 text-xs font-mono">
-                <span class="px-2.5 py-1 bg-surface border border-black font-bold">PDF / DOCX</span>
-                <span class="font-bold">→</span>
-                <span class="px-2.5 py-1 bg-surface border border-black font-bold">Recursive Chunking</span>
-                <span class="font-bold">→</span>
-                <span class="px-2.5 py-1 bg-accent border border-black font-bold">FAISS Vector Store</span>
-                <span class="font-bold">→</span>
-                <span class="px-2.5 py-1 bg-surface border border-black font-bold">LangChain LCEL</span>
-                <span class="font-bold">→</span>
-                <span class="px-2.5 py-1 bg-surface-dark text-white border border-black font-bold">Regex Guardrails</span>
-                <span class="font-bold">→</span>
-                <span class="px-2.5 py-1 bg-surface border border-black font-bold">FastAPI / Gradio UI</span>
-              </div>
-            </div>
-
-            <div class="flex flex-wrap items-center justify-between gap-3 pt-2">
-              <div class="flex flex-wrap gap-2 font-mono text-xs">
-                <span class="px-2 py-0.5 bg-canvas-card border border-black font-semibold">FAISS FlatL2</span>
-                <span class="px-2 py-0.5 bg-canvas-card border border-black font-semibold">LangChain LCEL</span>
-                <span class="px-2 py-0.5 bg-canvas-card border border-black font-semibold">FastAPI</span>
-                <span class="px-2 py-0.5 bg-canvas-card border border-black font-semibold">Gradio</span>
-              </div>
-              <div class="flex items-center gap-3">
-                <button class="px-5 py-2.5 rounded-lg bg-surface-dark text-white hover:bg-black font-mono text-xs font-bold uppercase shadow-stamped border border-black inline-flex items-center gap-1.5 transition-all" onclick="openCaseStudy('rag')">
-                  <span>View Case Study</span>
-                  <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
-                </button>
-                <a class="px-4 py-2.5 rounded-lg bg-surface hover:bg-canvas-card border-2 border-black font-mono text-xs font-bold inline-flex items-center gap-1.5" href="https://github.com/OmarElHawy/SmartDoc-RAG-Agent" rel="noopener noreferrer" target="_blank" aria-label="SmartDoc RAG Agent GitHub Repository">
-                  <span class="material-symbols-outlined text-sm" aria-hidden="true">code</span>
-                  <span>GitHub</span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 03: AUTOMATED TIMETABLE GENERATION (CSP) -->
-        <article class="bg-surface rounded-2xl border-2 border-black shadow-brutal-lg overflow-hidden">
-          <div class="bg-black text-white px-5 py-3 flex flex-wrap items-center justify-between gap-2 border-b-2 border-black">
-            <span class="text-xs font-mono font-bold text-accent uppercase tracking-wider">03 // OPTIMIZATION / CONSTRAINT AI</span>
-            <span class="px-2 py-0.5 rounded bg-accent text-black font-mono text-[11px] font-bold">0 Hard Conflicts</span>
-          </div>
-          <div class="p-5 sm:p-7 space-y-6">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
-              <div class="lg:col-span-8 space-y-3">
-                <h3 class="anton-heading text-2xl sm:text-3xl md:text-4xl text-black">
-                  AUTOMATED TIMETABLE GENERATION (CSP)
-                </h3>
-                <p class="text-sm text-ink-soft leading-relaxed">
-                  Modeled university academic scheduling across faculties, lecture halls, and instructor constraints as a mathematical Constraint Satisfaction Problem. Formulated greedy heuristic search algorithms with backtracking to eliminate instructor double-bookings and room capacity overloads. Deployed with CSV/Excel parsing and automated interactive departmental schedule views.
-                </p>
-                <div class="flex flex-wrap gap-2 font-mono text-xs">
-                  <span class="px-2 py-0.5 bg-canvas-high border border-black font-semibold">Python</span>
-                  <span class="px-2 py-0.5 bg-canvas-high border border-black font-semibold">Constraint Optimization</span>
-                  <span class="px-2 py-0.5 bg-canvas-high border border-black font-semibold">Backtracking Search</span>
-                  <span class="px-2 py-0.5 bg-canvas-high border border-black font-semibold">HTML Grid Automation</span>
-                </div>
-              </div>
-
-              <!-- Constraint Matrix -->
-              <div class="lg:col-span-4 grid grid-cols-1 gap-2 font-mono text-xs">
-                <div class="p-3 bg-canvas-high border-2 border-black rounded-lg">
-                  <span class="text-[10px] text-ink-muted uppercase block font-bold">[CONSTRAINT MATRIX]</span>
-                  <span class="text-black font-bold block mt-0.5">Instructor &amp; Room Capacities</span>
-                  <span class="text-[11px] text-accent-deep font-bold font-mono">100% Resolved Hard Conflicts</span>
-                </div>
-                <div class="p-3 bg-canvas-high border-2 border-black rounded-lg">
-                  <span class="text-[10px] text-ink-muted uppercase block font-bold">[OUTPUT DASHBOARDS]</span>
-                  <span class="text-black font-bold block mt-0.5">4 Interactive HTML Grids</span>
-                  <span class="text-[11px] text-ink-muted">&lt; 3.2s runtime for 120 sessions</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="flex items-center gap-3 pt-2 border-t-2 border-black/10">
-              <button class="px-5 py-2.5 rounded-lg bg-surface-dark text-white hover:bg-black font-mono text-xs font-bold uppercase shadow-stamped border border-black inline-flex items-center gap-1.5 transition-all" onclick="openCaseStudy('csp')">
-                <span>View Case Study</span>
-                <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
-              </button>
-              <a class="px-4 py-2.5 rounded-lg bg-surface hover:bg-canvas-card border-2 border-black font-mono text-xs font-bold inline-flex items-center gap-1.5" href="https://github.com/OmarElHawy/Automated-Timetable-Generation-as-a-Constraint-Satisfaction-Problem-CSP-" rel="noopener noreferrer" target="_blank" aria-label="Timetable Generation GitHub Repository">
-                <span class="material-symbols-outlined text-sm" aria-hidden="true">code</span>
-                <span>GitHub</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 04: BLOOD CELL IMAGE ANALYSIS -->
-        <article class="bg-surface rounded-2xl border-2 border-black shadow-brutal-lg overflow-hidden">
-          <div class="bg-black text-white px-5 py-3 flex flex-wrap items-center justify-between gap-2 border-b-2 border-black">
-            <span class="text-xs font-mono font-bold text-accent uppercase tracking-wider">04 // COMPUTER VISION / ML</span>
-            <div class="flex items-center gap-2">
-              <span class="px-2 py-0.5 rounded bg-accent text-black font-mono text-[11px] font-bold">98.75% Accuracy</span>
-              <span class="px-2 py-0.5 rounded bg-white text-black font-mono text-[11px] font-bold">0.9999 AUC</span>
-            </div>
-          </div>
-          <div class="p-5 sm:p-7 space-y-6">
-            <div class="space-y-3">
-              <h3 class="anton-heading text-2xl sm:text-3xl md:text-4xl text-black">
-                BLOOD CELL IMAGE ANALYSIS
-              </h3>
-              <p class="text-sm text-ink-soft leading-relaxed max-w-3xl">
-                A two-phase framework for white blood cell identification. Preprocessed microscopic smears via 2D Butterworth low-pass filtering and LAB color-space segmentation. Fused deep convolutional embeddings (EfficientNetB0, ResNet50, VGG) with handcrafted texture metrics (LBP, GLCM), optimized with Principal Component Analysis (PCA) retaining 95% variance, and classified with SVM.
-              </p>
-            </div>
-
-            <!-- Pipeline Visual Spec -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 font-mono text-xs">
-              <div class="p-3 bg-canvas-high border-2 border-black rounded-lg">
-                <span class="text-[10px] text-ink-muted uppercase block font-bold">[PREPROCESSING]</span>
-                <span class="text-black font-bold block mt-0.5">LAB Color-Space</span>
-                <span class="text-[10px] text-ink-muted">Butterworth Filtering</span>
-              </div>
-              <div class="p-3 bg-canvas-high border-2 border-black rounded-lg">
-                <span class="text-[10px] text-ink-muted uppercase block font-bold">[FEATURE FUSION]</span>
-                <span class="text-black font-bold block mt-0.5">CNN + LBP / GLCM</span>
-                <span class="text-[10px] text-ink-muted">EfficientNetB0, ResNet50</span>
-              </div>
-              <div class="p-3 bg-canvas-high border-2 border-black rounded-lg">
-                <span class="text-[10px] text-ink-muted uppercase block font-bold">[DIMENSIONALITY]</span>
-                <span class="text-black font-bold block mt-0.5">PCA Optimization</span>
-                <span class="text-[10px] text-accent-deep font-bold">95% Variance Retained</span>
-              </div>
-              <div class="p-3 bg-canvas-high border-2 border-black rounded-lg">
-                <span class="text-[10px] text-ink-muted uppercase block font-bold">[CLASSIFIER]</span>
-                <span class="text-black font-bold block mt-0.5">Optimal SVM</span>
-                <span class="text-[10px] text-accent-deep font-bold">0.9999 AUC-ROC</span>
-              </div>
-            </div>
-
-            <div class="flex items-center gap-3 pt-2">
-              <button class="px-5 py-2.5 rounded-lg bg-surface-dark text-white hover:bg-black font-mono text-xs font-bold uppercase shadow-stamped border border-black inline-flex items-center gap-1.5 transition-all" onclick="openCaseStudy('blood')">
-                <span>View Case Study</span>
-                <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
-              </button>
-              <a class="px-4 py-2.5 rounded-lg bg-surface hover:bg-canvas-card border-2 border-black font-mono text-xs font-bold inline-flex items-center gap-1.5" href="https://github.com/OmarElHawy/blood-cell-image-analysis" rel="noopener noreferrer" target="_blank" aria-label="Blood Cell Analysis GitHub Repository">
-                <span class="material-symbols-outlined text-sm" aria-hidden="true">code</span>
-                <span>GitHub</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 05: EGYPTIAN PREMIER LEAGUE RAG ASSISTANT -->
-        <article class="bg-surface rounded-2xl border-2 border-black shadow-brutal-lg overflow-hidden">
-          <div class="bg-black text-white px-5 py-3 flex flex-wrap items-center justify-between gap-2 border-b-2 border-black">
-            <span class="text-xs font-mono font-bold text-accent uppercase tracking-wider">05 // GENERATIVE AI / RAG</span>
-            <div class="flex items-center gap-2">
-              <span class="px-2 py-0.5 rounded bg-accent text-black font-mono text-[11px] font-bold">4,434 Chunks</span>
-              <span class="px-2 py-0.5 rounded bg-white text-black font-mono text-[11px] font-bold">40/40 Test Success</span>
-            </div>
-          </div>
-          <div class="p-5 sm:p-7 space-y-6">
-            <div class="space-y-3">
-              <h3 class="anton-heading text-2xl sm:text-3xl md:text-4xl text-black">
-                EGYPTIAN PREMIER LEAGUE RAG ASSISTANT
-              </h3>
-              <p class="text-sm text-ink-soft leading-relaxed max-w-3xl">
-                A production-grade RAG Q&amp;A system over Egyptian Premier League 2015-2026 data. Built with FastAPI, Streamlit, ChromaDB, and Ollama. Implements deterministic guards, intent-aware reranking, and source attribution across 4,434 semantic chunks.
-              </p>
-            </div>
-
-            <div class="flex flex-wrap gap-2 font-mono text-xs">
-              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">FastAPI</span>
-              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">Streamlit</span>
-              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">ChromaDB</span>
-              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">Ollama</span>
-              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">RAG</span>
-            </div>
-
-            <div class="flex items-center gap-3 pt-2">
-              <button class="px-5 py-2.5 rounded-lg bg-surface-dark text-white hover:bg-black font-mono text-xs font-bold uppercase shadow-stamped border border-black inline-flex items-center gap-1.5 transition-all" onclick="openCaseStudy('epl_rag')">
-                <span>View Case Study</span>
-                <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
-              </button>
-              <a class="px-4 py-2.5 rounded-lg bg-surface hover:bg-canvas-card border-2 border-black font-mono text-xs font-bold inline-flex items-center gap-1.5" href="https://github.com/OmarElHawy/Egyptian-Premier-League-RAG" rel="noopener noreferrer" target="_blank" aria-label="Egyptian Premier League RAG GitHub Repository">
-                <span class="material-symbols-outlined text-sm" aria-hidden="true">code</span>
-                <span>GitHub</span>
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <!-- PROJECT 06: RAG-BASED E-COMMERCE CUSTOMER SUPPORT CHATBOT -->
-        <article class="bg-surface rounded-2xl border-2 border-black shadow-brutal-lg overflow-hidden">
-          <div class="bg-black text-white px-5 py-3 flex flex-wrap items-center justify-between gap-2 border-b-2 border-black">
-            <span class="text-xs font-mono font-bold text-accent uppercase tracking-wider">06 // GENERATIVE AI / RAG</span>
-            <div class="flex items-center gap-2">
-              <span class="px-2 py-0.5 rounded bg-accent text-black font-mono text-[11px] font-bold">100% Local</span>
-              <span class="px-2 py-0.5 rounded bg-white text-black font-mono text-[11px] font-bold">Zero Hallucination</span>
-            </div>
-          </div>
-          <div class="p-5 sm:p-7 space-y-6">
-            <div class="space-y-3">
-              <h3 class="anton-heading text-2xl sm:text-3xl md:text-4xl text-black">
-                RAG-BASED E-COMMERCE CUSTOMER SUPPORT CHATBOT
-              </h3>
-              <p class="text-sm text-ink-soft leading-relaxed max-w-3xl">
-                A locally-run RAG-based customer support chatbot for e-commerce, using Ollama, ChromaDB, and Streamlit. Provides context-aware answers from a store's internal FAQ knowledge base with zero hallucination and no cloud costs.
-              </p>
-            </div>
-
-            <div class="flex flex-wrap gap-2 font-mono text-xs">
-              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">Ollama</span>
-              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">ChromaDB</span>
-              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">Streamlit</span>
-              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">RAG</span>
-              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">E-Commerce</span>
-            </div>
-
-            <div class="flex items-center gap-3 pt-2">
-              <button class="px-5 py-2.5 rounded-lg bg-surface-dark text-white hover:bg-black font-mono text-xs font-bold uppercase shadow-stamped border border-black inline-flex items-center gap-1.5 transition-all" onclick="openCaseStudy('ecommerce_rag')">
-                <span>View Case Study</span>
-                <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
-              </button>
-              <a class="px-4 py-2.5 rounded-lg bg-surface hover:bg-canvas-card border-2 border-black font-mono text-xs font-bold inline-flex items-center gap-1.5" href="https://github.com/OmarElHawy/RAG-Based-E-Commerce-Customer-Support-Chatbot" rel="noopener noreferrer" target="_blank" aria-label="RAG-Based E-Commerce Customer Support Chatbot GitHub Repository">
-                <span class="material-symbols-outlined text-sm" aria-hidden="true">code</span>
-                <span>GitHub</span>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- HOW I THINK (ENGINEERING PHILOSOPHY) -->
-    <section class="max-w-5xl mx-auto px-4 sm:px-6 space-y-8" id="methodology">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b-2 border-black pb-4">
-        <div>
-          <span class="text-xs font-mono text-black font-bold uppercase tracking-wider">// ENGINEERING PHILOSOPHY</span>
-          <h2 class="anton-heading text-4xl sm:text-5xl md:text-6xl text-black mt-1">HOW I THINK</h2>
-        </div>
-        <p class="text-xs font-mono text-ink-muted font-bold">Problem → Understand → Build → Test → Measure → Deploy</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <!-- Step 1 -->
-        <div class="p-5 rounded-xl bg-surface border-2 border-black shadow-brutal space-y-2.5">
-          <div class="flex items-center justify-between text-xs font-mono">
-            <span class="bg-black text-white px-2 py-0.5 rounded font-bold">01 / SCOPE</span>
-            <span class="material-symbols-outlined text-black" aria-hidden="true">tune</span>
-          </div>
-          <h3 class="font-mono font-bold text-base text-black uppercase">Problem Formulation</h3>
-          <p class="text-xs text-ink-soft leading-relaxed">
-            Deconstruct client requirements into concrete ML paradigms: classification, generative retrieval, sequence generation, or discrete constraint optimization.
-          </p>
-          <div class="pt-2 text-[11px] font-mono text-ink-muted border-t border-black/10">Tools: Mathematical Modeling • CSP Formulation</div>
-        </div>
-
-        <!-- Step 2 -->
-        <div class="p-5 rounded-xl bg-surface border-2 border-black shadow-brutal space-y-2.5">
-          <div class="flex items-center justify-between text-xs font-mono">
-            <span class="bg-black text-white px-2 py-0.5 rounded font-bold">02 / DATA</span>
-            <span class="material-symbols-outlined text-black" aria-hidden="true">dataset</span>
-          </div>
-          <h3 class="font-mono font-bold text-base text-black uppercase">Data Engineering</h3>
-          <p class="text-xs text-ink-soft leading-relaxed">
-            Feature engineering, data augmentation, and statistical analysis. Audio spectrogram transformation, dialectal text normalization, LAB color-space conversion, Butterworth filtering, and recursive text chunking.
-          </p>
-          <div class="pt-2 text-[11px] font-mono text-ink-muted border-t border-black/10">Tools: Pandas • NumPy • Librosa • OpenCV</div>
-        </div>
-
-        <!-- Step 3 -->
-        <div class="p-5 rounded-xl bg-surface border-2 border-black shadow-brutal space-y-2.5">
-          <div class="flex items-center justify-between text-xs font-mono">
-            <span class="bg-black text-white px-2 py-0.5 rounded font-bold">03 / MODEL</span>
-            <span class="material-symbols-outlined text-black" aria-hidden="true">model_training</span>
-          </div>
-          <h3 class="font-mono font-bold text-base text-black uppercase">Model Adaptation</h3>
-          <p class="text-xs text-ink-soft leading-relaxed">
-            Training CNNs, RNNs, Transformers, GANs, and custom architectures. Fine-tune Whisper-small, transfer learn deep CNN features (EfficientNet, ResNet), train custom SVM classifiers, or configure vector indices.
-          </p>
-          <div class="pt-2 text-[11px] font-mono text-ink-muted border-t border-black/10">Tools: PyTorch • scikit-learn • FAISS FlatL2</div>
-        </div>
-
-        <!-- Step 4 -->
-        <div class="p-5 rounded-xl bg-surface border-2 border-black shadow-brutal space-y-2.5">
-          <div class="flex items-center justify-between text-xs font-mono">
-            <span class="bg-black text-white px-2 py-0.5 rounded font-bold">04 / GUARD</span>
-            <span class="material-symbols-outlined text-black" aria-hidden="true">shield</span>
-          </div>
-          <h3 class="font-mono font-bold text-base text-black uppercase">Grounding &amp; Safety</h3>
-          <p class="text-xs text-ink-soft leading-relaxed">
-            Construct LangChain LCEL pipelines with regex pattern evaluation, context verification, and deterministic constraints to eliminate hallucinations.
-          </p>
-          <div class="pt-2 text-[11px] font-mono text-ink-muted border-t border-black/10">Tools: LangChain LCEL • LangServe • Python</div>
-        </div>
-
-        <!-- Step 5 -->
-        <div class="p-5 rounded-xl bg-surface border-2 border-black shadow-brutal space-y-2.5">
-          <div class="flex items-center justify-between text-xs font-mono">
-            <span class="bg-black text-white px-2 py-0.5 rounded font-bold">05 / PIPELINE</span>
-            <span class="material-symbols-outlined text-black" aria-hidden="true">terminal</span>
-          </div>
-          <h3 class="font-mono font-bold text-base text-black uppercase">Automation &amp; Serving</h3>
-          <p class="text-xs text-ink-soft leading-relaxed">
-            Wrap inference logic into modular FastAPI REST services or production n8n workflows integrating webhooks, Slack channels, and database feeds.
-          </p>
-          <div class="pt-2 text-[11px] font-mono text-ink-muted border-t border-black/10">Tools: FastAPI • n8n Workflows • Webhooks</div>
-        </div>
-
-        <!-- Step 6 -->
-        <div class="p-5 rounded-xl bg-surface border-2 border-black shadow-brutal space-y-2.5">
-          <div class="flex items-center justify-between text-xs font-mono">
-            <span class="bg-accent text-black px-2 py-0.5 rounded font-bold border border-black">06 / VERIFY</span>
-            <span class="material-symbols-outlined text-black" aria-hidden="true">query_stats</span>
-          </div>
-          <h3 class="font-mono font-bold text-base text-black uppercase">Empirical Evaluation</h3>
-          <p class="text-xs text-ink-soft leading-relaxed">
-            Validate on hold-out splits: Word Error Rate (WER) on speech, ROC-AUC on classification, and latency profiling on vector searches.
-          </p>
-          <div class="pt-2 text-[11px] font-mono text-ink-muted border-t border-black/10">Tools: Matplotlib • Seaborn • Benchmarking</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- WHAT I CAN BUILD (CLIENT-ORIENTED UPWORK SERVICES) -->
-    <section class="max-w-5xl mx-auto px-4 sm:px-6 space-y-8" id="services">
-      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b-2 border-black pb-4">
-        <div>
-          <span class="text-xs font-mono text-black font-bold uppercase tracking-wider">// CONTRACT &amp; CLIENT SERVICES</span>
-          <h2 class="anton-heading text-4xl sm:text-5xl md:text-6xl text-black mt-1">WHAT I CAN BUILD</h2>
-        </div>
-        <p class="text-xs font-mono text-ink-muted">Available for Upwork contracts, direct consulting &amp; specialized builds</p>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <!-- Service: Deep Learning & Custom Model Training -->
-        <div class="p-6 rounded-xl bg-surface border-2 border-black shadow-brutal flex flex-col justify-between hover:bg-canvas-card transition-colors">
-          <div class="space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-accent border-2 border-black flex items-center justify-center">
-              <span class="material-symbols-outlined text-black text-2xl" aria-hidden="true">model_training</span>
-            </div>
-            <h3 class="font-mono font-bold text-base text-black">Deep Learning &amp; Custom Model Training</h3>
-            <p class="text-xs text-ink-soft leading-relaxed">
-              End-to-end model development: CNNs, RNNs, Transformers, GANs, and Diffusion Models. Fine-tuning, transfer learning, and hyperparameter optimization for specialized use cases.
-            </p>
-          </div>
-          <a class="inline-flex items-center gap-1.5 text-black font-mono text-xs font-bold uppercase tracking-wider mt-5 hover:text-accent-deep" href="#contact">
-            <span>Discuss a Project →</span>
-          </a>
-        </div>
-
-        <!-- Service 1 -->
-        <div class="p-6 rounded-xl bg-surface border-2 border-black shadow-brutal flex flex-col justify-between hover:bg-canvas-card transition-colors">
-          <div class="space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-accent border-2 border-black flex items-center justify-center">
-              <span class="material-symbols-outlined text-black text-2xl" aria-hidden="true">smart_toy</span>
-            </div>
-            <h3 class="font-mono font-bold text-base text-black">Generative AI &amp; Autonomous Agents</h3>
-            <p class="text-xs text-ink-soft leading-relaxed">
-              Custom LLM integrations, multi-step prompt chains, agentic tool invocation, and structured output formatting for enterprise operations.
-            </p>
-          </div>
-          <a class="inline-flex items-center gap-1.5 text-black font-mono text-xs font-bold uppercase tracking-wider mt-5 hover:text-accent-deep" href="#contact">
-            <span>Discuss a Project →</span>
-          </a>
-        </div>
-
-        <!-- Service 2 -->
-        <div class="p-6 rounded-xl bg-surface border-2 border-black shadow-brutal flex flex-col justify-between hover:bg-canvas-card transition-colors">
-          <div class="space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-accent border-2 border-black flex items-center justify-center">
-              <span class="material-symbols-outlined text-black text-2xl" aria-hidden="true">database</span>
-            </div>
-            <h3 class="font-mono font-bold text-base text-black">RAG Knowledge Assistants</h3>
-            <p class="text-xs text-ink-soft leading-relaxed">
-              Private vector database setups (FAISS/Pinecone) connected to internal documentation with strict grounding verification and zero hallucinations.
-            </p>
-          </div>
-          <a class="inline-flex items-center gap-1.5 text-black font-mono text-xs font-bold uppercase tracking-wider mt-5 hover:text-accent-deep" href="#contact">
-            <span>Discuss a Project →</span>
-          </a>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="p-6 rounded-xl bg-surface border-2 border-black shadow-brutal flex flex-col justify-between hover:bg-canvas-card transition-colors">
-          <div class="space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-accent border-2 border-black flex items-center justify-center">
-              <span class="material-symbols-outlined text-black text-2xl" aria-hidden="true">terminal</span>
-            </div>
-            <h3 class="font-mono font-bold text-base text-black">AI Automation &amp; Workflows</h3>
-            <p class="text-xs text-ink-soft leading-relaxed">
-              Complete n8n orchestration connecting webhooks, CRM/Slack channels, automated reporting bots, and background batch processors.
-            </p>
-          </div>
-          <a class="inline-flex items-center gap-1.5 text-black font-mono text-xs font-bold uppercase tracking-wider mt-5 hover:text-accent-deep" href="#contact">
-            <span>Discuss a Project →</span>
-          </a>
-        </div>
-
-        <!-- Service 4 -->
-        <div class="p-6 rounded-xl bg-surface border-2 border-black shadow-brutal flex flex-col justify-between hover:bg-canvas-card transition-colors">
-          <div class="space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-accent border-2 border-black flex items-center justify-center">
-              <span class="material-symbols-outlined text-black text-2xl" aria-hidden="true">timeline</span>
-            </div>
-            <h3 class="font-mono font-bold text-base text-black">Custom ML Pipelines</h3>
-            <p class="text-xs text-ink-soft leading-relaxed">
-              Feature extraction, data preprocessing, model selection, hyperparameter tuning, and containerized deployment with REST API endpoints.
-            </p>
-          </div>
-          <a class="inline-flex items-center gap-1.5 text-black font-mono text-xs font-bold uppercase tracking-wider mt-5 hover:text-accent-deep" href="#contact">
-            <span>Discuss a Project →</span>
-          </a>
-        </div>
-
-        <!-- Service 5 -->
-        <div class="p-6 rounded-xl bg-surface border-2 border-black shadow-brutal flex flex-col justify-between hover:bg-canvas-card transition-colors">
-          <div class="space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-accent border-2 border-black flex items-center justify-center">
-              <span class="material-symbols-outlined text-black text-2xl" aria-hidden="true">deployed_code</span>
-            </div>
-            <h3 class="font-mono font-bold text-base text-black">Computer Vision Solutions</h3>
-            <p class="text-xs text-ink-soft leading-relaxed">
-              Fine-tuned YOLO object detection models, quality inspection pipelines, image segmentation, and visual biometric classification.
-            </p>
-          </div>
-          <a class="inline-flex items-center gap-1.5 text-black font-mono text-xs font-bold uppercase tracking-wider mt-5 hover:text-accent-deep" href="#contact">
-            <span>Discuss a Project →</span>
-          </a>
-        </div>
-
-        <!-- Service 6 -->
-        <div class="p-6 rounded-xl bg-surface border-2 border-black shadow-brutal flex flex-col justify-between hover:bg-canvas-card transition-colors">
-          <div class="space-y-3">
-            <div class="w-10 h-10 rounded-lg bg-accent border-2 border-black flex items-center justify-center">
-              <span class="material-symbols-outlined text-black text-2xl" aria-hidden="true">mic</span>
-            </div>
-            <h3 class="font-mono font-bold text-base text-black">Applied NLP &amp; Speech (STT)</h3>
-            <p class="text-xs text-ink-soft leading-relaxed">
-              Whisper fine-tuning for regional dialects (including Egyptian Arabic), audio preprocessing, named-entity recognition, and semantic search.
-            </p>
-          </div>
-          <a class="inline-flex items-center gap-1.5 text-black font-mono text-xs font-bold uppercase tracking-wider mt-5 hover:text-accent-deep" href="#contact">
-            <span>Discuss a Project →</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROFESSIONAL EXPERIENCE & TRACK RECORD -->
-    <section class="max-w-5xl mx-auto px-4 sm:px-6 space-y-8" id="experience">
-      <div class="border-b-2 border-black pb-4">
-        <span class="text-xs font-mono text-black font-bold uppercase tracking-wider">// CAREER TIMELINE</span>
-        <h2 class="anton-heading text-4xl sm:text-5xl md:text-6xl text-black mt-1">PROFESSIONAL EXPERIENCE</h2>
-      </div>
-
-      <div class="relative border-l-4 border-black ml-3 sm:ml-4 space-y-7 pl-6 sm:pl-8">
-        <!-- Exp 1 -->
-        <div class="relative">
-          <span class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-accent border-2 border-black" aria-hidden="true"></span>
-          <div class="flex flex-wrap items-center justify-between gap-1">
-            <h3 class="text-base font-bold text-black font-mono">AI Automation Workflow with N8N Professional</h3>
-            <span class="text-xs font-mono font-bold px-2 py-0.5 bg-black text-white rounded">07/2026 – Present</span>
-          </div>
-          <div class="text-xs font-mono font-semibold text-ink-muted mt-0.5">Digital Egypt Pioneers Initiative (DEPI)</div>
-          <p class="text-xs text-ink-soft mt-2 leading-relaxed">
-            Constructing enterprise automation systems using n8n. Integrating webhook endpoints, Slack event listeners, custom REST APIs, and automated secure email workflows with robust error routing.
-          </p>
-        </div>
-
-        <!-- Exp 2 -->
-        <div class="relative">
-          <span class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-accent border-2 border-black" aria-hidden="true"></span>
-          <div class="flex flex-wrap items-center justify-between gap-1">
-            <h3 class="text-base font-bold text-black font-mono">Advanced AI</h3>
-            <span class="text-xs font-mono font-bold px-2 py-0.5 bg-black text-white rounded">07/2026 – Present</span>
-          </div>
-          <div class="text-xs font-mono font-semibold text-ink-muted mt-0.5">Information Technology Institute (ITI)</div>
-          <p class="text-xs text-ink-soft mt-2 leading-relaxed">
-            Deploying state-of-the-art YOLO object detection models, building production NLP pipelines, and engineering high-precision RAG systems with LangChain and vector databases.
-          </p>
-        </div>
-
-        <!-- Exp 3 -->
-        <div class="relative">
-          <span class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-white border-2 border-black" aria-hidden="true"></span>
-          <div class="flex flex-wrap items-center justify-between gap-1">
-            <h3 class="text-base font-bold text-black font-mono">Building RAG Agents with LLMs</h3>
-            <span class="text-xs font-mono font-bold px-2 py-0.5 bg-canvas-card border border-black text-black">01/2026 – 02/2026</span>
-          </div>
-          <div class="text-xs font-mono font-semibold text-ink-muted mt-0.5">Information Technology Institute (ITI)</div>
-          <p class="text-xs text-ink-soft mt-2 leading-relaxed">
-            Specialized workshop on retrieval-augmented generation. Built vector databases using FAISS, implemented dense document retrieval, prompt engineering strategies, and grounded query evaluation.
-          </p>
-        </div>
-
-        <!-- Exp 4 -->
-        <div class="relative">
-          <span class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-white border-2 border-black" aria-hidden="true"></span>
-          <div class="flex flex-wrap items-center justify-between gap-1">
-            <h3 class="text-base font-bold text-black font-mono">Generative AI</h3>
-            <span class="text-xs font-mono font-bold px-2 py-0.5 bg-canvas-card border border-black text-black">09/2025 – 10/2025</span>
-          </div>
-          <div class="text-xs font-mono font-semibold text-ink-muted mt-0.5">Information Technology Institute (ITI)</div>
-          <p class="text-xs text-ink-soft mt-2 leading-relaxed">
-            Explored Large Language Models, text generation pipelines, automated summarization algorithms, and safety techniques to counter hallucinations.
-          </p>
-        </div>
-
-        <!-- Exp 5 -->
-        <div class="relative">
-          <span class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-white border-2 border-black" aria-hidden="true"></span>
-          <div class="flex flex-wrap items-center justify-between gap-1">
-            <h3 class="text-base font-bold text-black font-mono">Data Analysis with Python (Score: 98%)</h3>
-            <span class="text-xs font-mono font-bold px-2 py-0.5 bg-canvas-card border border-black text-black">09/2025 – 10/2025</span>
-          </div>
-          <div class="text-xs font-mono font-semibold text-ink-muted mt-0.5">National Telecommunication Institute (NTI)</div>
-          <p class="text-xs text-ink-soft mt-2 leading-relaxed">
-            Conducted deep Exploratory Data Analysis (EDA) on structured datasets using Pandas and NumPy. Generated communicative visualization suites via Matplotlib and Seaborn.
-          </p>
-        </div>
-
-        <!-- Exp 6 -->
-        <div class="relative">
-          <span class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-white border-2 border-black" aria-hidden="true"></span>
-          <div class="flex flex-wrap items-center justify-between gap-1">
-            <h3 class="text-base font-bold text-black font-mono">Artificial Intelligence</h3>
-            <span class="text-xs font-mono font-bold px-2 py-0.5 bg-canvas-card border border-black text-black">08/2025 – 09/2025</span>
-          </div>
-          <div class="text-xs font-mono font-semibold text-ink-muted mt-0.5">WE – Telecom Egypt</div>
-          <p class="text-xs text-ink-soft mt-2 leading-relaxed">
-            Covered foundational machine learning lifecycle management: data sanitization, categorical encoding, feature scaling, and comparative classifier benchmarking.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT OMAR NASSER (HUMAN & PERSONAL) -->
-    <section class="max-w-5xl mx-auto px-4 sm:px-6 space-y-6" id="about">
-      <div class="border-b-2 border-black pb-4">
-        <span class="text-xs font-mono text-black font-bold uppercase tracking-wider">// PROFILE &amp; IDENTITY</span>
-        <h2 class="anton-heading text-4xl sm:text-5xl md:text-6xl text-black mt-1">ABOUT OMAR NASSER</h2>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-        <div class="lg:col-span-8 p-6 bg-surface border-2 border-black rounded-xl shadow-brutal space-y-4">
-          <h3 class="anton-heading text-2xl sm:text-3xl text-black">
-            "I LIKE TURNING MESSY PROBLEMS INTO WORKING SYSTEMS."
-          </h3>
-          <p class="text-sm text-ink-soft leading-relaxed">
-            I am an AI Engineer and Data Science student at the <strong class="text-black font-semibold">Egypt-Japan University of Science and Technology (E-JUST)</strong> in Alexandria, Egypt. My practical approach to machine learning is grounded in reality: theoretical accuracy only matters if the deployed inference pipeline can reliably handle messy, real-world data at scale.
-          </p>
-          <p class="text-sm text-ink-soft leading-relaxed">
-            Through competitive technical programs with <strong class="text-black font-semibold">DEPI</strong> (Digital Egypt Pioneers Initiative), <strong class="text-black font-semibold">ITI</strong> (Information Technology Institute), <strong class="text-black font-semibold">NTI</strong> (National Telecommunication Institute), and <strong class="text-black font-semibold">WE Telecom Egypt</strong>, I focus on applied engineering: building custom Arabic speech models, resilient LangChain RAG systems, and enterprise workflow automations. Beyond specific projects, I have hands-on experience with a wide range of AI domains including classical Machine Learning, Deep Learning architectures (Transformers, GANs, CNNs), and advanced computer vision and NLP techniques.
-          </p>
-          <div class="pt-2 flex flex-wrap gap-3 font-mono text-xs font-bold text-black border-t border-black/10">
-            <span class="bg-accent px-2 py-0.5 border border-black">DEGREE: B.SC. IN AI &amp; DATA SCIENCE</span>
-            <span class="bg-white px-2 py-0.5 border border-black">LOCATION: ALEXANDRIA, EGYPT (UTC+2)</span>
-          </div>
-        </div>
-
-        <div class="lg:col-span-4 p-5 rounded-xl bg-surface-dark text-white border-2 border-black shadow-brutal space-y-3">
-          <div class="text-xs font-mono font-bold text-accent uppercase tracking-wider">[VERIFIED ACCREDITATIONS]</div>
-          <div class="space-y-2.5 font-mono text-xs">
-            <div class="pb-2 border-b border-white/20">
-              <div class="text-white font-bold">E-JUST</div>
-              <div class="text-gray-400 text-[11px]">Egypt-Japan Univ. of Science &amp; Technology</div>
-            </div>
-            <div class="pb-2 border-b border-white/20">
-              <div class="text-white font-bold">ITI // NVIDIA DLI Generative AI</div>
-              <div class="text-gray-400 text-[11px]">Advanced Level • 100 Hours Intensive</div>
-            </div>
-            <div class="pb-2 border-b border-white/20">
-              <div class="text-white font-bold">DEPI // n8n Workflows</div>
-              <div class="text-gray-400 text-[11px]">Digital Egypt Pioneers Automation Track</div>
-            </div>
-            <div>
-              <div class="text-white font-bold">NTI // Python Data Analysis</div>
-              <div class="text-accent text-[11px] font-bold">Final Score: 98% (72 Hours)</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- GITHUB & OPEN SOURCE BAND (TERMINAL STYLING ON DARK) -->
-    <section class="bg-surface-dark text-white border-y-4 border-black py-10 px-4 sm:px-6">
-      <div class="max-w-5xl mx-auto space-y-6">
-        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div class="space-y-1">
-            <span class="text-xs font-mono uppercase text-accent font-bold">// OPEN SOURCE CODEBASES</span>
-            <h3 class="anton-heading text-3xl sm:text-4xl text-white">UNDER THE HOOD</h3>
-            <p class="text-xs text-gray-300 font-mono">Want to see how it works under the hood? Explore my repositories.</p>
-          </div>
-          <a class="px-5 py-2.5 bg-accent hover:bg-accent-deep text-black font-mono text-xs font-bold uppercase rounded-lg shadow-stamped border-2 border-black inline-flex items-center gap-2 self-start sm:self-auto transition-all" href="https://github.com/OmarElHawy" rel="noopener noreferrer" target="_blank" aria-label="Visit Omar Nasser GitHub Profile in new tab">
-            <span class="material-symbols-outlined text-sm" aria-hidden="true">code</span>
-            <span>github.com/OmarElHawy</span>
-          </a>
-        </div>
-
-        <div class="p-4 bg-black border-2 border-white/20 rounded-xl font-mono text-xs space-y-2">
-          <div class="flex items-center gap-2 text-gray-400 border-b border-white/10 pb-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-red-500" aria-hidden="true"></span>
-            <span class="w-2.5 h-2.5 rounded-full bg-yellow-500" aria-hidden="true"></span>
-            <span class="w-2.5 h-2.5 rounded-full bg-accent" aria-hidden="true"></span>
-            <span class="text-[11px] ml-2">bash — omar@ejust-ai:~$</span>
-          </div>
-          <div class="pt-1 text-white">
-            <span class="text-accent font-bold">$</span> git clone https://github.com/OmarElHawy/SmartDoc-RAG-Agent.git
-          </div>
-          <div class="text-gray-400 text-[11px]">
-            &gt; Cloning into 'SmartDoc-RAG-Agent'... remote: Compressing objects: 100% done.
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT SECTION & PROJECT INITIATION -->
-    <section class="max-w-5xl mx-auto px-4 sm:px-6 space-y-8 pt-4 pb-12" id="contact">
-      <div class="border-b-2 border-black pb-4">
-        <span class="text-xs font-mono text-black font-bold uppercase tracking-wider">// INITIATE ENGAGEMENT</span>
-        <h2 class="anton-heading text-4xl sm:text-5xl md:text-6xl text-black mt-1">
-          HAVE A PROBLEM WORTH SOLVING? LET'S BUILD SOMETHING INTELLIGENT.
-        </h2>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        <!-- Direct coordinates -->
-        <div class="lg:col-span-5 space-y-4">
-          <p class="text-sm text-ink-soft leading-relaxed">
-            I am currently open to select AI engineering roles, custom consulting, and freelance RAG/ML builds. Copy my details below or submit a brief inquiry.
-          </p>
-
-          <div class="space-y-3 font-mono text-xs">
-            <!-- Email -->
-            <div class="p-3.5 rounded-xl bg-surface border-2 border-black shadow-brutal flex items-center justify-between">
-              <div class="flex items-center gap-2.5">
-                <span class="material-symbols-outlined text-black text-lg" aria-hidden="true">mail</span>
-                <span class="text-black font-bold select-all">omarr.elhawyy@gmail.com</span>
-              </div>
-              <button aria-label="Copy Email to clipboard" class="px-2 py-1 bg-canvas-card border border-black hover:bg-accent rounded text-[11px] font-bold transition-colors" onclick="copyTextToClipboard('omarr.elhawyy@gmail.com', 'Email')">
-                COPY
-              </button>
-            </div>
-
-            <!-- Phone -->
-            <div class="p-3.5 rounded-xl bg-surface border-2 border-black shadow-brutal flex items-center justify-between">
-              <div class="flex items-center gap-2.5">
-                <span class="material-symbols-outlined text-black text-lg" aria-hidden="true">call</span>
-                <span class="text-black font-bold select-all">+201285407011</span>
-              </div>
-              <button aria-label="Copy Phone number to clipboard" class="px-2 py-1 bg-canvas-card border border-black hover:bg-accent rounded text-[11px] font-bold transition-colors" onclick="copyTextToClipboard('+201285407011', 'Phone')">
-                COPY
-              </button>
-            </div>
-
-            <!-- LinkedIn -->
-            <div class="p-3.5 rounded-xl bg-surface border-2 border-black shadow-brutal flex items-center justify-between">
-              <div class="flex items-center gap-2.5">
-                <svg class="w-4 h-4 fill-current text-black flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.2a1.66 1.66 0 0 0-1.66 1.66c0 .92.74 1.66 1.66 1.66.92 0 1.66-.74 1.66-1.66 0-.92-.74-1.66-1.66-1.66Z"/></svg>
-                <span class="text-black font-bold">Omar Nasser</span>
-              </div>
-              <a href="https://www.linkedin.com/in/omar-nasser-aab951303/" rel="noopener noreferrer" target="_blank" aria-label="Visit LinkedIn Profile" class="px-2 py-1 bg-canvas-card border border-black hover:bg-accent rounded text-[11px] font-bold transition-colors inline-flex items-center gap-1">
-                CONNECT ↗
-              </a>
-            </div>
-
-            <!-- Upwork -->
-            <div class="p-3.5 rounded-xl bg-surface border-2 border-black shadow-brutal flex items-center justify-between">
-              <div class="flex items-center gap-2.5">
-                <svg class="w-4 h-4 fill-current text-black flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.546-1.405 0-2.543-1.14-2.545-2.546V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z"/></svg>
-                <span class="text-black font-bold">Omar Nasser</span>
-              </div>
-              <a href="https://www.upwork.com/freelancers/~0188788a3622ea7489?mp_source=share" rel="noopener noreferrer" target="_blank" aria-label="Hire on Upwork" class="px-2 py-1 bg-canvas-card border border-black hover:bg-accent rounded text-[11px] font-bold transition-colors inline-flex items-center gap-1">
-                HIRE ↗
-              </a>
-            </div>
-
-            <!-- Location -->
-            <div class="p-3.5 rounded-xl bg-surface border-2 border-black shadow-brutal flex items-center justify-between">
-              <div class="flex items-center gap-2.5">
-                <span class="material-symbols-outlined text-black text-lg" aria-hidden="true">location_on</span>
-                <span class="text-black font-bold">Alexandria, Egypt</span>
-              </div>
-              <span class="bg-accent px-2 py-0.5 border border-black text-[11px] font-bold">UTC+2</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project Inquiry Form -->
-        <div class="lg:col-span-7">
-                    <form class="p-6 rounded-2xl bg-surface border-2 border-black shadow-brutal-lg space-y-4" id="contactForm">
-            <div class="space-y-4 mb-4">
-              <!-- Name -->
-              <input type="text" name="from_name" id="from_name" required placeholder="Your Name" class="w-full block rounded-lg bg-canvas-high border-2 border-black text-black text-xs font-mono font-semibold focus:border-black focus:ring-0 p-3">
-              <!-- Email -->
-              <input type="email" name="from_email" id="from_email" required placeholder="Your Email" class="w-full block rounded-lg bg-canvas-high border-2 border-black text-black text-xs font-mono font-semibold focus:border-black focus:ring-0 p-3">
-            </div>
-            <div>
-              <label class="block text-xs font-mono font-bold uppercase text-black mb-1.5" for="inquiryScope">
-                Project Scope / Engagement Type
-              </label>
-              <select class="w-full rounded-lg bg-canvas-high border-2 border-black text-black text-xs font-mono font-semibold focus:border-black focus:ring-0 p-3" id="inquiryScope" name="scope">
-                <option value="Generative AI &amp; RAG Assistant Project">Generative AI &amp; RAG Assistant Project</option>
-                <option value="RAG System Development &amp; Integration">RAG System Development &amp; Integration</option>
-                <option value="AI Workflow Automation (n8n &amp; APIs)">AI Workflow Automation (n8n &amp; APIs)</option>
-                <option value="Custom Computer Vision / ML Implementation">Custom Computer Vision / ML Implementation</option>
-                <option value="Speech to Text (Arabic STT) &amp; NLP">Speech to Text (Arabic STT) &amp; NLP</option>
-                <option value="Full-Time / Freelance AI Engineer Role">Full-Time / Freelance AI Engineer Role</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-xs font-mono font-bold uppercase text-black mb-1.5" for="inquiryMsg">
-                Project Details &amp; Objectives
-              </label>
-              <textarea class="w-full rounded-lg bg-canvas-high border-2 border-black text-black placeholder:text-ink-muted text-xs font-mono focus:border-black focus:ring-0 p-3" id="inquiryMsg" name="message" placeholder="Outline your deliverables, dataset availability, or timeline..." rows="4"></textarea>
-            </div>
-            <button class="w-full py-3.5 rounded-lg bg-surface-dark hover:bg-black text-white font-mono text-xs font-bold uppercase tracking-wider shadow-stamped border-2 border-black transition-all flex items-center justify-center gap-2" type="submit" id="inquirySubmitBtn">
-              <span>Send Project Inquiry</span>
-              <span class="material-symbols-outlined text-sm" aria-hidden="true">send</span>
-            </button>
-            <!-- Fallback mailto -->
-            <p class="text-center text-[11px] font-mono text-ink-muted pt-1">
-              Or email me directly at
-              <a href="mailto:omarr.elhawyy@gmail.com" class="text-black font-bold underline hover:text-ink-soft transition-colors">omarr.elhawyy@gmail.com</a>
-            </p>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- CASE STUDY MODAL OVERLAY -->
-  <div class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4 overflow-y-auto" id="caseStudyModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="rounded-2xl bg-surface border-4 border-black max-w-2xl w-full p-6 space-y-4 shadow-brutal-lg relative max-h-[85vh] overflow-y-auto">
-      <div class="flex justify-between items-start border-b-2 border-black pb-3">
-        <div>
-          <span class="text-xs font-mono font-bold text-ink-muted uppercase tracking-wider" id="modalCategory">PROJECT DEEP DIVE</span>
-          <h3 class="anton-heading text-2xl sm:text-3xl text-black mt-1" id="modalTitle">Case Study</h3>
-        </div>
-        <button aria-label="Close Case Study Modal" class="p-1 border-2 border-black rounded hover:bg-accent transition-colors" onclick="closeCaseStudy()">
-          <span class="material-symbols-outlined" aria-hidden="true">close</span>
-        </button>
-      </div>
-
-      <div class="space-y-4 text-xs text-ink-soft leading-relaxed font-sans">
-        <div>
-          <h4 class="font-bold text-black font-mono text-xs uppercase mb-1">Architecture &amp; Solution</h4>
-          <p id="modalSolution"></p>
-        </div>
-        <div>
-          <h4 class="font-bold text-black font-mono text-xs uppercase mb-1">Implementation Highlights</h4>
-          <ul class="list-disc list-inside space-y-1 font-mono text-[11px]" id="modalHighlights"></ul>
-        </div>
-        <div class="p-3 bg-canvas-high border-2 border-black rounded-lg font-mono">
-          <span class="text-[10px] text-ink-muted uppercase block mb-1 font-bold">Verified Metrics</span>
-          <div class="text-black font-bold text-xs" id="modalMetrics"></div>
-        </div>
-        <div>
-          <h4 class="font-bold text-black font-mono text-xs uppercase mb-1">Key Takeaway</h4>
-          <p id="modalLessons"></p>
-        </div>
-      </div>
-
-      <div class="pt-3 border-t-2 border-black flex justify-end">
-        <button class="px-5 py-2 rounded-lg bg-surface-dark text-white font-mono text-xs font-bold uppercase shadow-stamped border border-black hover:bg-black transition-all" onclick="closeCaseStudy()">
-          Close
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- EDITORIAL FOOTER -->
-  <footer class="border-t-4 border-black bg-surface-dark text-white mt-12">
-    <div class="flex flex-col md:flex-row justify-between items-center max-w-5xl mx-auto px-5 py-8 gap-4 text-xs font-mono">
-      <div class="flex items-center gap-2.5">
-        <span class="w-3 h-3 bg-accent border border-black" aria-hidden="true"></span>
-        <span class="font-bold tracking-wider text-sm">OMAR NASSER MAHMOUD</span>
-      </div>
-      <div class="flex flex-wrap items-center gap-5 font-bold">
-        <a class="hover:text-accent transition-colors" href="https://github.com/OmarElHawy" rel="noopener noreferrer" target="_blank">GitHub</a>
-        <a class="hover:text-accent transition-colors" href="https://www.linkedin.com/in/omar-nasser-aab951303/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
-        <a class="hover:text-accent transition-colors" href="mailto:omarr.elhawyy@gmail.com">Email</a>
-        <a class="hover:text-accent transition-colors" href="https://wa.me/201285407011" rel="noopener noreferrer" target="_blank">WhatsApp</a>
-        <a class="text-accent underline hover:text-white" href="assets/Omar_Nasser_Mahmoud_CV.pdf" download="Omar_Nasser_Mahmoud_CV.pdf">Download Resume</a>
-      </div>
-      <div class="text-gray-400 text-center md:text-right text-[11px]">
-        © 2026 Omar Nasser Mahmoud. All rights reserved.
-      </div>
-    </div>
-  </footer>
-
-  <!-- MOBILE BOTTOM STICKY NAVIGATION BAR -->
-  <nav class="fixed bottom-0 left-0 w-full z-40 md:hidden flex justify-around items-center px-4 py-2.5 bg-canvas/95 backdrop-blur-lg border-t-2 border-black shadow-lg font-mono text-[11px] font-bold" aria-label="Mobile Bottom Navigation">
-    <a class="flex flex-col items-center justify-center text-black py-1" href="#hero">
-      <span class="material-symbols-outlined text-lg" aria-hidden="true">terminal</span>
-      <span>INDEX</span>
-    </a>
-    <a class="flex flex-col items-center justify-center text-black py-1" href="#metrics">
-      <span class="material-symbols-outlined text-lg" aria-hidden="true">query_stats</span>
-      <span>PROOF</span>
-    </a>
-    <a class="flex flex-col items-center justify-center text-black py-1" href="#work">
-      <span class="material-symbols-outlined text-lg" aria-hidden="true">dataset</span>
-      <span>WORK</span>
-    </a>
-    <a class="flex flex-col items-center justify-center text-black py-1" href="#contact">
-      <span class="material-symbols-outlined text-lg" aria-hidden="true">send</span>
-      <span>CONTACT</span>
-    </a>
-  </nav>
-
-  <!-- Toast Notification Container -->
-  <div id="toast" role="status" aria-live="polite"></div>
-
-    <!-- Interactive Client-side Script -->
-  <script src="js/main.js"></script>
-
-  <!-- EmailJS SDK -->
-  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script>
-    (function () {
-      emailjs.init("vILZ4yzOakpawKfuF");
-    })();
-  </script>
-  <!-- Success Popup Modal -->
-  <div id="successModal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/60 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="successTitle">
-    <div class="bg-surface border-4 border-black rounded-2xl shadow-brutal-lg p-8 max-w-md w-full mx-4 space-y-4 text-center">
-      <div class="w-16 h-16 bg-accent border-2 border-black rounded-full flex items-center justify-center mx-auto">
-        <span class="material-symbols-outlined text-black text-3xl" aria-hidden="true">check</span>
-      </div>
-      <h3 class="anton-heading text-3xl text-black" id="successTitle">MESSAGE SENT!</h3>
-      <p class="text-sm text-ink-soft font-mono">Thanks for reaching out. I'll get back to you within 24 hours.</p>
-      <button onclick="closeSuccessModal()" class="w-full py-3 rounded-lg bg-surface-dark text-white font-mono text-xs font-bold uppercase shadow-stamped border-2 border-black hover:bg-black transition-all">
-        Close
-      </button>
-    </div>
-  </div>
-
-</body>
-</html>
+﻿<!DOCTYPE html>
+<html class="light" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  
+  <!-- Primary Meta Tags -->
+  <title>Omar Nasser — AI Engineer | RAG, LLMs &amp; Computer Vision</title>
+  <meta name="title" content="Omar Nasser — AI Engineer | RAG, LLMs &amp; Computer Vision"/>
+  <meta name="description" content="AI Engineer specializing in verifiable RAG pipelines, fine-tuned speech models, computer vision, and autonomous workflow orchestrations. Based in Alexandria, Egypt."/>
+  <meta name="keywords" content="Omar Nasser, Omar Nasser Mahmoud, AI Engineer, Machine Learning, RAG, LangChain, Whisper, Computer Vision, Alexandria Egypt, E-JUST, n8n, Deep Learning, Speech to Text"/>
+  <meta name="author" content="Omar Nasser Mahmoud"/>
+  <meta name="robots" content="index, follow"/>
+  <meta name="theme-color" content="#e6e5de"/>
+  <link rel="canonical" href="https://omarelhawy.github.io/Omar-Nasser-Portfolio/"/>
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://omarelhawy.github.io/Omar-Nasser-Portfolio/"/>
+  <meta property="og:site_name" content="Omar Nasser Portfolio"/>
+  <meta property="og:title" content="Omar Nasser — AI Engineer | RAG, LLMs &amp; Computer Vision"/>
+  <meta property="og:description" content="AI Engineer specializing in verifiable RAG pipelines, fine-tuned speech models, computer vision, and autonomous workflow orchestrations. Based in Alexandria, Egypt."/>
+  <meta property="og:image" content="assets/og-image.png"/>
+  <meta property="og:locale" content="en_US"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:url" content="https://omarelhawy.github.io/Omar-Nasser-Portfolio/"/>
+  <meta name="twitter:title" content="Omar Nasser — AI Engineer | RAG, LLMs &amp; Computer Vision"/>
+  <meta name="twitter:description" content="AI Engineer specializing in verifiable RAG pipelines, fine-tuned speech models, computer vision, and autonomous workflow orchestrations. Based in Alexandria, Egypt."/>
+  <meta name="twitter:image" content="assets/og-image.png"/>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"/>
+  <link rel="apple-touch-icon" href="assets/favicon.svg"/>
+
+  <!-- Google Fonts: Anton, Inter, JetBrains Mono (preloaded for performance) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap"/>
+
+  <!-- Compiled Tailwind CSS (production build — no CDN dependency) -->
+  <link rel="stylesheet" href="css/tailwind.compiled.css"/>
+
+  <!-- Custom Design Tokens & Component Styles -->
+  <link rel="stylesheet" href="css/styles.css"/>
+
+  <!-- JSON-LD Structured Data for Rich Search Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Omar Nasser Mahmoud",
+    "jobTitle": "AI Engineer",
+    "url": "https://omarelhawy.github.io/omar-nasser-portfolio/",
+    "email": "omarr.elhawyy@gmail.com",
+    "telephone": "+201285407011",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Alexandria",
+      "addressCountry": "Egypt"
+    },
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Egypt-Japan University of Science and Technology (E-JUST)"
+    },
+    "sameAs": [
+      "https://github.com/OmarElHawy",
+      "https://www.linkedin.com/in/omar-nasser-aab951303/"
+    ],
+    "knowsAbout": [
+      "Artificial Intelligence",
+      "Retrieval-Augmented Generation (RAG)",
+      "Large Language Models (LLMs)",
+      "Computer Vision",
+      "Speech-to-Text (STT)",
+      "LangChain",
+      "FAISS",
+      "PyTorch",
+      "n8n Workflow Automation"
+    ]
+  }
+  </script>
+</head>
+<body class="bg-canvas text-ink font-sans antialiased selection:bg-accent selection:text-ink pb-24 md:pb-0">
+
+  <!-- TOP ELECTRIC MINT ANNOUNCEMENT BAR -->
+  <aside class="sticky top-0 z-50 bg-accent text-ink border-b-2 border-black px-4 py-2 text-center overflow-x-auto whitespace-nowrap">
+    <a class="inline-flex items-center justify-center gap-2 text-xs font-mono font-bold uppercase tracking-wider hover:underline" href="#contact">
+      <span class="inline-block w-2 h-2 rounded-full bg-black animate-ping" aria-hidden="true"></span>
+      AVAILABLE FOR FREELANCE &amp; AI CONTRACTS — UPWORK &amp; DIRECT ENQUIRIES →
+    </a>
+  </aside>
+
+  <!-- EDITORIAL PILL APP BAR -->
+  <header class="sticky top-8 z-40 px-3 sm:px-4 py-2 pointer-events-none">
+    <div class="pointer-events-auto max-w-5xl mx-auto bg-canvas/90 backdrop-blur-md border-2 border-black rounded-2xl px-4 py-2.5 flex justify-between items-center koyeb-pill shadow-brutal">
+      <a class="flex items-center gap-2.5 group" href="#hero" aria-label="Omar Nasser Home">
+        <span class="w-3 h-3 bg-accent border border-black transition-transform group-hover:rotate-45" aria-hidden="true"></span>
+        <span class="text-base font-bold tracking-tight text-ink font-mono uppercase">OMAR NASSER // AI ENG</span>
+      </a>
+      
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex items-center gap-6 text-xs font-mono font-medium tracking-wide" aria-label="Desktop Navigation">
+        <a class="hover:text-black transition-colors" href="#metrics">Empirical Proof</a>
+        <a class="hover:text-black transition-colors" href="#work">Projects</a>
+        <a class="hover:text-black transition-colors" href="#methodology">System</a>
+        <a class="hover:text-black transition-colors" href="#services">Services</a>
+        <a class="hover:text-black transition-colors" href="#about">About</a>
+        <a class="px-4 py-1.5 rounded-lg bg-surface-dark text-white font-mono text-xs uppercase tracking-wider shadow-stamped hover:bg-black transition-all" href="#contact">Contact</a>
+      </nav>
+
+      <!-- Mobile Right Controls -->
+      <div class="flex items-center gap-2 md:hidden">
+        <a class="px-3 py-1 bg-surface-dark text-white font-mono text-[11px] font-bold uppercase rounded-lg shadow-stamped" href="#contact">
+          Contact
+        </a>
+        <button aria-label="Toggle Menu" class="p-1.5 border border-black bg-surface rounded-lg hover:bg-accent transition-colors" id="drawerToggle">
+          <span class="material-symbols-outlined text-xl" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE SLIDE-OUT DRAWER -->
+  <div class="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden transition-opacity" id="drawerOverlay" aria-hidden="true"></div>
+  <aside class="fixed inset-y-0 right-0 w-80 z-50 bg-canvas border-l-2 border-black shadow-2xl flex flex-col h-full p-5 space-y-4 translate-x-full transition-transform duration-300 ease-in-out" id="mobileDrawer" aria-label="Mobile Navigation Drawer">
+    <div class="flex items-center justify-between pb-3 border-b-2 border-black">
+      <div class="flex items-center gap-2 font-mono text-xs font-bold uppercase">
+        <span class="w-3 h-3 bg-accent border border-black" aria-hidden="true"></span>
+        <span>INDEX &amp; SPECS</span>
+      </div>
+      <button aria-label="Close Menu" class="p-1 border border-black rounded hover:bg-accent" id="drawerClose">
+        <span class="material-symbols-outlined text-lg" aria-hidden="true">close</span>
+      </button>
+    </div>
+    
+    <div class="p-3 bg-surface-card border-2 border-black rounded-lg">
+      <div class="font-bold text-sm text-black">Omar Nasser Mahmoud</div>
+      <div class="text-[11px] font-mono text-ink-muted mt-0.5 font-medium">E-JUST • AI &amp; Data Science</div>
+      <div class="text-[10px] font-mono uppercase bg-accent inline-block px-1.5 py-0.5 border border-black mt-2 font-bold">
+        STATUS: OPEN TO WORK
+      </div>
+    </div>
+
+    <nav class="flex-1 space-y-2 font-mono text-xs font-semibold" aria-label="Drawer Links">
+      <a class="drawer-link flex items-center justify-between p-3 rounded-lg border border-black bg-surface hover:bg-accent text-black" href="#hero">
+        <span>00 // Overview</span>
+        <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+      </a>
+      <a class="drawer-link flex items-center justify-between p-3 rounded-lg border border-black bg-surface hover:bg-accent text-black" href="#metrics">
+        <span>01 // Empirical Proof</span>
+        <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+      </a>
+      <a class="drawer-link flex items-center justify-between p-3 rounded-lg border border-black bg-surface hover:bg-accent text-black" href="#work">
+        <span>02 // Selected Projects</span>
+        <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+      </a>
+      <a class="drawer-link flex items-center justify-between p-3 rounded-lg border border-black bg-surface hover:bg-accent text-black" href="#methodology">
+        <span>03 // How I Think</span>
+        <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+      </a>
+      <a class="drawer-link flex items-center justify-between p-3 rounded-lg border border-black bg-surface hover:bg-accent text-black" href="#services">
+        <span>04 // What I Can Build</span>
+        <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+      </a>
+      <a class="drawer-link flex items-center justify-between p-3 rounded-lg border border-black bg-surface hover:bg-accent text-black" href="#experience">
+        <span>05 // Training &amp; Internships</span>
+        <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+      </a>
+      <a class="drawer-link flex items-center justify-between p-3 rounded-lg border border-black bg-surface hover:bg-accent text-black" href="#about">
+        <span>06 // About Omar</span>
+        <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+      </a>
+      <a class="drawer-link flex items-center justify-between p-3 rounded-lg border border-black bg-surface hover:bg-accent text-black" href="#contact">
+        <span>07 // Contact</span>
+        <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+      </a>
+    </nav>
+
+    <div class="pt-3 border-t-2 border-black space-y-1.5 font-mono text-xs">
+      <a class="flex items-center justify-between text-ink hover:underline" href="https://github.com/OmarElHawy" rel="noopener noreferrer" target="_blank">
+        <span>github.com/OmarElHawy</span>
+        <span class="material-symbols-outlined text-xs" aria-hidden="true">north_east</span>
+      </a>
+      <a class="flex items-center justify-between text-ink hover:underline" href="https://www.linkedin.com/in/omar-nasser-aab951303/" rel="noopener noreferrer" target="_blank">
+        <span>linkedin.com/in/omar-nasser</span>
+        <span class="material-symbols-outlined text-xs" aria-hidden="true">north_east</span>
+      </a>
+    </div>
+  </aside>
+
+  <main class="space-y-16 sm:space-y-24">
+    <!-- HERO SECTION -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-4 sm:pt-8" id="hero">
+      <div class="space-y-6">
+        <!-- Eyebrow Pill -->
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface border-2 border-black text-xs font-mono font-bold tracking-tight shadow-brutal">
+          <span class="w-2.5 h-2.5 rounded-full bg-accent border border-black" aria-hidden="true"></span>
+          <span>OMAR NASSER — AI &amp; DATA SCIENCE // ALEXANDRIA, EGYPT</span>
+        </div>
+
+        <!-- Big Brutalist Anton Headline -->
+        <div class="space-y-3">
+          <h1 class="anton-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-black leading-[1.1]">
+            I BUILD AI SYSTEMS THAT <span class="bg-accent px-1.5 underline decoration-black decoration-4 inline-block mt-1 sm:mt-0">ACTUALLY WORK.</span>
+          </h1>
+          <div class="font-mono text-xs sm:text-sm font-bold uppercase tracking-wider text-ink border-l-4 border-black pl-3 py-1">
+            MACHINE LEARNING • DEEP LEARNING • TRANSFORMERS •  AI Automation• GENERATIVE AI • RAG
+          </div>
+        </div>
+
+        <!-- Narrative Positioning -->
+        <p class="text-base sm:text-lg text-ink-soft max-w-3xl leading-relaxed font-normal">
+          AI &amp; Data Science undergraduate at <strong class="text-black font-semibold">Egypt-Japan University of Science and Technology (E-JUST)</strong>. Specializing in verifiable RAG pipelines, fine-tuned speech models, end-to-end computer vision, and autonomous workflow orchestrations.
+        </p>
+
+        <!-- Stamped Action CTAs -->
+        <div class="flex flex-wrap items-center gap-3 pt-2">
+          <a class="px-5 py-3 rounded-lg bg-surface-dark hover:bg-black text-white font-mono text-xs sm:text-sm font-bold uppercase tracking-wider shadow-stamped inline-flex items-center gap-2 border border-black transition-all" href="#work">
+            <span>Explore Selected Work</span>
+            <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_downward</span>
+          </a>
+          <a class="px-5 py-3 rounded-lg bg-accent hover:bg-accent-deep text-black font-mono text-xs sm:text-sm font-bold uppercase tracking-wider shadow-stamped border-2 border-black inline-flex items-center gap-2 transition-all" href="#contact">
+            <span>Let's Talk</span>
+            <span class="material-symbols-outlined text-sm" aria-hidden="true">send</span>
+          </a>
+          <a class="px-4 py-3 rounded-lg bg-surface hover:bg-surface-card text-black font-mono text-xs font-bold border border-black inline-flex items-center gap-1.5" href="https://github.com/OmarElHawy" rel="noopener noreferrer" target="_blank" aria-label="View Omar Nasser GitHub profile in new tab">
+            <span class="material-symbols-outlined text-sm" aria-hidden="true">code</span>
+            <span>GitHub Profile ↗</span>
+          </a>
+        </div>
+
+        <!-- INTERACTIVE SMARTDOC RAG AGENT HERO WIDGET -->
+        <div class="mt-8 rounded-xl bg-surface border-2 border-black shadow-brutal-lg overflow-hidden">
+          <div class="bg-surface-dark text-white px-4 py-3 border-b-2 border-black flex flex-wrap items-center justify-between gap-2 text-xs font-mono font-bold">
+            <div class="flex items-center gap-2">
+              <span class="w-3 h-3 rounded-full bg-accent border border-black" aria-hidden="true"></span>
+              <span class="tracking-wide">SMARTDOC RAG PIPELINE ARCHITECTURE</span>
+            </div>
+            <div class="flex items-center gap-3 text-[11px] text-accent font-mono">
+              <span>FAISS VECTOR STORE</span>
+              <span class="text-white">|</span>
+              <span class="bg-accent text-black px-1.5 py-0.5 rounded font-bold">LCEL GUARDRAIL: ACTIVE</span>
+            </div>
+          </div>
+
+          <!-- Flow nodes container -->
+          <div class="p-4 sm:p-6 bg-canvas-high space-y-4">
+            <div class="text-[11px] font-mono text-ink-muted uppercase font-bold tracking-wider">
+              [TAP NODES TO INSPECT PIPELINE SPECIFICATIONS]
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2" id="pipelineNodes" role="tablist" aria-label="RAG Architecture Nodes">
+              <button class="pipeline-node text-left p-2.5 rounded-lg border-2 border-black bg-accent text-black transition-all focus:outline-none" data-stage="ingest" role="tab" aria-selected="true" aria-controls="stageDetails">
+                <span class="text-[10px] font-mono uppercase block font-bold">01 / SOURCE</span>
+                <span class="font-bold text-xs block leading-tight mt-0.5">DOCUMENT</span>
+                <span class="text-[10px] font-mono text-ink block mt-1">PDF • DOCX</span>
+              </button>
+              <button class="pipeline-node text-left p-2.5 rounded-lg border-2 border-black bg-surface text-ink hover:bg-canvas-card transition-all focus:outline-none" data-stage="chunk" role="tab" aria-selected="false" aria-controls="stageDetails">
+                <span class="text-[10px] font-mono uppercase text-ink-muted block font-semibold">02 / CHUNK</span>
+                <span class="font-bold text-xs block leading-tight mt-0.5">RECURSIVE</span>
+                <span class="text-[10px] font-mono text-ink-muted block mt-1">500 char token</span>
+              </button>
+              <button class="pipeline-node text-left p-2.5 rounded-lg border-2 border-black bg-surface text-ink hover:bg-canvas-card transition-all focus:outline-none" data-stage="faiss" role="tab" aria-selected="false" aria-controls="stageDetails">
+                <span class="text-[10px] font-mono uppercase text-ink-muted block font-semibold">03 / INDEX</span>
+                <span class="font-bold text-xs block leading-tight mt-0.5">FAISS VECTOR</span>
+                <span class="text-[10px] font-mono text-ink-muted block mt-1">1536-dim FlatL2</span>
+              </button>
+              <button class="pipeline-node text-left p-2.5 rounded-lg border-2 border-black bg-surface text-ink hover:bg-canvas-card transition-all focus:outline-none" data-stage="retrieve" role="tab" aria-selected="false" aria-controls="stageDetails">
+                <span class="text-[10px] font-mono uppercase text-ink-muted block font-semibold">04 / RETRIEVER</span>
+                <span class="font-bold text-xs block leading-tight mt-0.5">LCEL CHAIN</span>
+                <span class="text-[10px] font-mono text-ink-muted block mt-1">Cosine k=4</span>
+              </button>
+              <button class="pipeline-node text-left p-2.5 rounded-lg border-2 border-black bg-surface text-ink hover:bg-canvas-card transition-all focus:outline-none" data-stage="guard" role="tab" aria-selected="false" aria-controls="stageDetails">
+                <span class="text-[10px] font-mono uppercase text-ink-muted block font-semibold">05 / LLM SYNTHESIS</span>
+                <span class="font-bold text-xs block leading-tight mt-0.5">MISTRAL / LLAMA</span>
+                <span class="text-[10px] font-mono text-ink-muted block mt-1">Regex Grounding</span>
+              </button>
+              <button class="pipeline-node text-left p-2.5 rounded-lg border-2 border-black bg-surface text-ink hover:bg-canvas-card transition-all focus:outline-none" data-stage="serve" role="tab" aria-selected="false" aria-controls="stageDetails">
+                <span class="text-[10px] font-mono uppercase text-ink-muted block font-semibold">06 / SERVE</span>
+                <span class="font-bold text-xs block leading-tight mt-0.5">GROUNDED ANSWER</span>
+                <span class="text-[10px] font-mono text-ink-muted block mt-1">FastAPI + Gradio</span>
+              </button>
+            </div>
+
+            <!-- Explainer box -->
+            <div class="p-3.5 bg-surface border-2 border-black rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs" id="stageDetails" role="tabpanel">
+              <div class="flex items-start gap-2.5">
+                <span class="material-symbols-outlined text-black text-xl mt-0.5" aria-hidden="true">terminal</span>
+                <div>
+                  <div class="font-mono text-black font-bold uppercase" id="stageTitle">01: Document Ingestion (PDF / DOCX)</div>
+                  <div class="text-ink-soft mt-0.5" id="stageDesc">Robust extraction supporting multi-page PDF documents and nested tables, filtering extraneous formatting artifacts prior to chunking.</div>
+                </div>
+              </div>
+              <div class="shrink-0 font-mono text-[11px] bg-accent px-2 py-1 border border-black font-bold text-black" id="stageMetric">
+                PDF / DOCX PARSING
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BUILT. TESTED. MEASURED. (HIGH-IMPACT DARK METRIC BAND) -->
+    <section class="bg-surface-dark text-white border-y-4 border-black py-12 px-4 sm:px-6" id="metrics">
+      <div class="max-w-5xl mx-auto space-y-8">
+        <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b-2 border-white/20 pb-4">
+          <div>
+            <span class="text-xs font-mono uppercase font-bold text-accent tracking-widest">// EMPIRICAL PROOF &amp; BENCHMARKS</span>
+            <h2 class="anton-heading text-4xl sm:text-5xl md:text-6xl text-white mt-1">BUILT. TESTED. MEASURED.</h2>
+          </div>
+          <p class="text-xs font-mono text-gray-300 max-w-xs">
+            Measured evaluation scores across dialectal speech, biomedical computer vision, and machine learning models.
+          </p>
+        </div>
+
+        <!-- Metric Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-3.5 sm:gap-4">
+          <!-- Metric 1 -->
+          <div class="p-4 bg-surface-darker border-2 border-white/20 rounded-xl space-y-1 relative group hover:border-accent transition-colors">
+            <span class="anton-heading text-4xl sm:text-5xl text-accent block">24.24%</span>
+            <div class="text-xs font-bold uppercase tracking-tight text-white font-mono">WER (Word Error Rate)</div>
+            <div class="text-[11px] text-gray-300 font-mono">Whisper-small fine-tune on Egyptian dialect</div>
+          </div>
+          <!-- Metric 2 -->
+          <div class="p-4 bg-surface-darker border-2 border-white/20 rounded-xl space-y-1 relative group hover:border-accent transition-colors">
+            <span class="anton-heading text-4xl sm:text-5xl text-accent block">11.14%</span>
+            <div class="text-xs font-bold uppercase tracking-tight text-white font-mono">CER (Char Error Rate)</div>
+            <div class="text-[11px] text-gray-300 font-mono">Diacritic normalized transcription accuracy</div>
+          </div>
+          <!-- Metric 3 -->
+          <div class="p-4 bg-surface-darker border-2 border-white/20 rounded-xl space-y-1 relative group hover:border-accent transition-colors">
+            <span class="anton-heading text-4xl sm:text-5xl text-accent block">98.75%</span>
+            <div class="text-xs font-bold uppercase tracking-tight text-white font-mono">Accuracy</div>
+            <div class="text-[11px] text-gray-300 font-mono">White blood cell subtype multi-class</div>
+          </div>
+          <!-- Metric 4 -->
+          <div class="p-4 bg-surface-darker border-2 border-white/20 rounded-xl space-y-1 relative group hover:border-accent transition-colors">
+            <span class="anton-heading text-4xl sm:text-5xl text-accent block">0.9999</span>
+            <div class="text-xs font-bold uppercase tracking-tight text-white font-mono">AUC-ROC Metric</div>
+            <div class="text-[11px] text-gray-300 font-mono">EfficientNetB0 deep features + SVM</div>
+          </div>
+          <!-- Metric 5 -->
+          <div class="p-4 bg-surface-darker border-2 border-white/20 rounded-xl space-y-1 col-span-2 md:col-span-1 relative group hover:border-accent transition-colors">
+            <span class="anton-heading text-4xl sm:text-5xl text-white block">20,000</span>
+            <div class="text-xs font-bold uppercase tracking-tight text-accent font-mono">Audio Samples</div>
+            <div class="text-[11px] text-gray-300 font-mono">Mozilla Common Voice Arabic corpus</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK / EDITORIAL CASE STUDIES -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 space-y-10" id="work">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b-2 border-black pb-4">
+        <div>
+          <span class="text-xs font-mono text-black font-bold uppercase tracking-wider">// SELECTED PROJECTS</span>
+          <h2 class="anton-heading text-4xl sm:text-5xl md:text-6xl text-black mt-1">END-TO-END AI PROJECTS</h2>
+        </div>
+        <p class="text-xs font-mono text-ink-muted">Validated codebases, architecture specs, and benchmarked metrics</p>
+      </div>
+
+      <div class="space-y-10">
+        <!-- PROJECT 01: ARABIC SPEECH-TO-TEXT -->
+        <article class="bg-surface rounded-2xl border-2 border-black shadow-brutal-lg overflow-hidden">
+          <div class="bg-black text-white px-5 py-3 flex flex-wrap items-center justify-between gap-2 border-b-2 border-black">
+            <span class="text-xs font-mono font-bold text-accent uppercase tracking-wider">01 // SPEECH AI &amp; NLP</span>
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded bg-accent text-black font-mono text-[11px] font-bold">24.24% WER</span>
+              <span class="px-2 py-0.5 rounded bg-white text-black font-mono text-[11px] font-bold">11.14% CER</span>
+            </div>
+          </div>
+          <div class="p-5 sm:p-7 space-y-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+              <div class="lg:col-span-7 space-y-4">
+                <h3 class="anton-heading text-2xl sm:text-3xl md:text-4xl text-black">
+                  ARABIC (EGYPTIAN) SPEECH TO TEXT
+                </h3>
+                <p class="text-sm text-ink-soft leading-relaxed">
+                  Fine-tuned OpenAI’s Whisper-small (244M parameters) on 20,000 Mozilla Common Voice audio recordings for dialectal Egyptian Arabic. Dialectal speech breaks vanilla models due to colloquial phonetic shifts; this implementation engineered a robust audio processing pipeline featuring 16kHz resampling, log-mel spectrogram extraction, Arabic diacritic removal, and FP16 PyTorch training on RTX 3060 with Gradio streaming inference.
+                </p>
+                <div class="flex flex-wrap gap-2 pt-1 font-mono text-xs">
+                  <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">Whisper-small (244M)</span>
+                  <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">PyTorch</span>
+                  <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">FP16 Precision</span>
+                  <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">16kHz Mel-Spec</span>
+                  <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">Gradio</span>
+                </div>
+                <div class="flex flex-wrap items-center gap-3 pt-3">
+                  <button class="px-5 py-2.5 rounded-lg bg-surface-dark text-white hover:bg-black font-mono text-xs font-bold uppercase shadow-stamped border border-black inline-flex items-center gap-1.5 transition-all" onclick="openCaseStudy('whisper')">
+                    <span>View Case Study</span>
+                    <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+                  </button>
+                  <a class="px-4 py-2.5 rounded-lg bg-surface hover:bg-canvas-card border-2 border-black font-mono text-xs font-bold inline-flex items-center gap-1.5" href="https://github.com/OmarElHawy/Whisper-Arabic-Speech-Recognition" rel="noopener noreferrer" target="_blank" aria-label="View Arabic Speech-to-Text GitHub Code">
+                    <span class="material-symbols-outlined text-sm" aria-hidden="true">code</span>
+                    <span>GitHub Code</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Multi-slot interactive visual card -->
+              <div class="lg:col-span-5 space-y-3">
+                <div class="bg-surface-dark border-2 border-black rounded-xl overflow-hidden shadow-brutal">
+                  <div class="px-3 py-2 bg-black border-b border-white/20 flex items-center justify-between text-[11px] font-mono text-white">
+                    <span class="text-accent font-bold">[GRADIO DEMO] INFERENCE UI</span>
+                    <span class="text-gray-400">244M Weights</span>
+                  </div>
+                  <div class="p-2.5">
+                    <img alt="Arabic Speech to text Gradio UI screenshot demonstrating audio waveform and live transcription" class="w-full h-40 sm:h-48 object-cover rounded border border-white/20" loading="lazy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoF7hrc5AeYke9pBEtvc5cWAS-t8GkqUS4wsmOdWJ3FTyGCWTfERjG7YHiHbfC-SdbNFeE8_Cs6GNtywVVlGmj3KeoWcF1WwhdJDpfKN97oWtyC2GP_Uyd0TJWItSf88EOZcWNxR3WxhIy2I7go7_yskwa3kcouCiowtEfSve_pfo8W_jdvsPoc9UxXbja-qHZGRreAPA1-TOOcxKzwBob4u_2BNfkZ1SC-TNzuudf636KJ1TyJ8BR"/>
+                  </div>
+                </div>
+                <div class="grid grid-cols-2 gap-2 text-xs font-mono">
+                  <div class="p-3 bg-canvas-high border-2 border-black rounded-lg">
+                    <span class="text-[10px] text-ink-muted uppercase block font-bold">[SPECTROGRAM]</span>
+                    <span class="text-black font-bold block mt-0.5">16kHz Mel-Spec</span>
+                    <span class="text-[11px] text-ink-soft">Autoregressive</span>
+                  </div>
+                  <div class="p-3 bg-canvas-high border-2 border-black rounded-lg">
+                    <span class="text-[10px] text-ink-muted uppercase block font-bold">[BENCHMARK]</span>
+                    <span class="text-black font-bold block mt-0.5">24.24% WER</span>
+                    <span class="text-[11px] text-ink-muted">11.14% CER</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 02: SMARTDOC RAG AGENT -->
+        <article class="bg-surface rounded-2xl border-2 border-black shadow-brutal-lg overflow-hidden">
+          <div class="bg-black text-white px-5 py-3 flex flex-wrap items-center justify-between gap-2 border-b-2 border-black">
+            <span class="text-xs font-mono font-bold text-accent uppercase tracking-wider">02 // GENERATIVE AI / RAG</span>
+            <span class="px-2 py-0.5 rounded bg-white text-black font-mono text-[11px] font-bold">NVIDIA DLI Workshop</span>
+          </div>
+          <div class="p-5 sm:p-7 space-y-6">
+            <div class="space-y-3">
+              <h3 class="anton-heading text-2xl sm:text-3xl md:text-4xl text-black">
+                SMARTDOC RAG AGENT
+              </h3>
+              <p class="text-sm text-ink-soft leading-relaxed max-w-3xl">
+                A verifiable RAG assistant developed during NVIDIA DLI advanced workshops for navigating dense multi-format technical manuals (PDFs, DOCX, spec sheets). Implements recursive semantic chunking, normalized cosine FAISS vector similarity search, and LangChain LCEL orchestration with regex safety grounding that reduces hallucinations with grounding checks and guardrails.
+              </p>
+            </div>
+
+            <!-- Pipeline Breakdown Card -->
+            <div class="p-4 bg-canvas-high border-2 border-black rounded-xl space-y-2">
+              <div class="text-[11px] font-mono uppercase font-bold text-black tracking-wider">
+                [SYSTEM TOPOLOGY] Document Ingestion &amp; Grounding
+              </div>
+              <div class="flex flex-wrap items-center gap-2 text-xs font-mono">
+                <span class="px-2.5 py-1 bg-surface border border-black font-bold">PDF / DOCX</span>
+                <span class="font-bold">→</span>
+                <span class="px-2.5 py-1 bg-surface border border-black font-bold">Recursive Chunking</span>
+                <span class="font-bold">→</span>
+                <span class="px-2.5 py-1 bg-accent border border-black font-bold">FAISS Vector Store</span>
+                <span class="font-bold">→</span>
+                <span class="px-2.5 py-1 bg-surface border border-black font-bold">LangChain LCEL</span>
+                <span class="font-bold">→</span>
+                <span class="px-2.5 py-1 bg-surface-dark text-white border border-black font-bold">Regex Guardrails</span>
+                <span class="font-bold">→</span>
+                <span class="px-2.5 py-1 bg-surface border border-black font-bold">FastAPI / Gradio UI</span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center justify-between gap-3 pt-2">
+              <div class="flex flex-wrap gap-2 font-mono text-xs">
+                <span class="px-2 py-0.5 bg-canvas-card border border-black font-semibold">FAISS FlatL2</span>
+                <span class="px-2 py-0.5 bg-canvas-card border border-black font-semibold">LangChain LCEL</span>
+                <span class="px-2 py-0.5 bg-canvas-card border border-black font-semibold">FastAPI</span>
+                <span class="px-2 py-0.5 bg-canvas-card border border-black font-semibold">Gradio</span>
+              </div>
+              <div class="flex items-center gap-3">
+                <button class="px-5 py-2.5 rounded-lg bg-surface-dark text-white hover:bg-black font-mono text-xs font-bold uppercase shadow-stamped border border-black inline-flex items-center gap-1.5 transition-all" onclick="openCaseStudy('rag')">
+                  <span>View Case Study</span>
+                  <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+                </button>
+                <a class="px-4 py-2.5 rounded-lg bg-surface hover:bg-canvas-card border-2 border-black font-mono text-xs font-bold inline-flex items-center gap-1.5" href="https://github.com/OmarElHawy/SmartDoc-RAG-Agent" rel="noopener noreferrer" target="_blank" aria-label="SmartDoc RAG Agent GitHub Repository">
+                  <span class="material-symbols-outlined text-sm" aria-hidden="true">code</span>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 03: AUTOMATED TIMETABLE GENERATION (CSP) -->
+        <article class="bg-surface rounded-2xl border-2 border-black shadow-brutal-lg overflow-hidden">
+          <div class="bg-black text-white px-5 py-3 flex flex-wrap items-center justify-between gap-2 border-b-2 border-black">
+            <span class="text-xs font-mono font-bold text-accent uppercase tracking-wider">03 // OPTIMIZATION / CONSTRAINT AI</span>
+            <span class="px-2 py-0.5 rounded bg-accent text-black font-mono text-[11px] font-bold">Greedy Heuristic</span>
+          </div>
+          <div class="p-5 sm:p-7 space-y-6">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+              <div class="lg:col-span-8 space-y-3">
+                <h3 class="anton-heading text-2xl sm:text-3xl md:text-4xl text-black">
+                  AUTOMATED TIMETABLE GENERATION (CSP)
+                </h3>
+                <p class="text-sm text-ink-soft leading-relaxed">
+                  Modeled university academic scheduling across faculties, lecture halls, and instructor constraints as a mathematical Constraint Satisfaction Problem. Solved with a custom greedy heuristic search (backtracking planned as future work) to resolve instructor double-bookings and room capacity overloads. Deployed with CSV/Excel parsing and automated interactive departmental schedule views.
+                </p>
+                <div class="flex flex-wrap gap-2 font-mono text-xs">
+                  <span class="px-2 py-0.5 bg-canvas-high border border-black font-semibold">Python</span>
+                  <span class="px-2 py-0.5 bg-canvas-high border border-black font-semibold">Constraint Optimization</span>
+                  <span class="px-2 py-0.5 bg-canvas-high border border-black font-semibold">Greedy Heuristic</span>
+                  <span class="px-2 py-0.5 bg-canvas-high border border-black font-semibold">HTML Grid Automation</span>
+                </div>
+              </div>
+
+              <!-- Constraint Matrix -->
+              <div class="lg:col-span-4 grid grid-cols-1 gap-2 font-mono text-xs">
+                <div class="p-3 bg-canvas-high border-2 border-black rounded-lg">
+                  <span class="text-[10px] text-ink-muted uppercase block font-bold">[CONSTRAINT MATRIX]</span>
+                  <span class="text-black font-bold block mt-0.5">Instructor &amp; Room Capacities</span>
+                  <span class="text-[11px] text-accent-deep font-bold font-mono">Centralized Validation</span>
+                </div>
+                <div class="p-3 bg-canvas-high border-2 border-black rounded-lg">
+                  <span class="text-[10px] text-ink-muted uppercase block font-bold">[OUTPUT DASHBOARDS]</span>
+                  <span class="text-black font-bold block mt-0.5">4 Interactive HTML Grids</span>
+                  <span class="text-[11px] text-ink-muted">CS &amp; IT Department structure</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 pt-2 border-t-2 border-black/10">
+              <button class="px-5 py-2.5 rounded-lg bg-surface-dark text-white hover:bg-black font-mono text-xs font-bold uppercase shadow-stamped border border-black inline-flex items-center gap-1.5 transition-all" onclick="openCaseStudy('csp')">
+                <span>View Case Study</span>
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+              </button>
+              <a class="px-4 py-2.5 rounded-lg bg-surface hover:bg-canvas-card border-2 border-black font-mono text-xs font-bold inline-flex items-center gap-1.5" href="https://github.com/OmarElHawy/Automated-Timetable-Generation-as-a-Constraint-Satisfaction-Problem-CSP-" rel="noopener noreferrer" target="_blank" aria-label="Timetable Generation GitHub Repository">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">code</span>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 04: BLOOD CELL IMAGE ANALYSIS -->
+        <!-- TODO: Add dataset name and train/test split details -->
+        <article class="bg-surface rounded-2xl border-2 border-black shadow-brutal-lg overflow-hidden">
+          <div class="bg-black text-white px-5 py-3 flex flex-wrap items-center justify-between gap-2 border-b-2 border-black">
+            <span class="text-xs font-mono font-bold text-accent uppercase tracking-wider">04 // COMPUTER VISION / ML</span>
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded bg-accent text-black font-mono text-[11px] font-bold">98.75% Accuracy</span>
+              <span class="px-2 py-0.5 rounded bg-white text-black font-mono text-[11px] font-bold">0.9999 AUC</span>
+            </div>
+          </div>
+          <div class="p-5 sm:p-7 space-y-6">
+            <div class="space-y-3">
+              <h3 class="anton-heading text-2xl sm:text-3xl md:text-4xl text-black">
+                BLOOD CELL IMAGE ANALYSIS
+              </h3>
+              <p class="text-sm text-ink-soft leading-relaxed max-w-3xl">
+                A two-phase framework for white blood cell identification. Preprocessed microscopic smears via 2D Butterworth low-pass filtering and LAB color-space segmentation. Fused deep convolutional embeddings (EfficientNetB0, ResNet50, VGG) with handcrafted texture metrics (LBP, GLCM), optimized with Principal Component Analysis (PCA) retaining 95% variance, and classified with SVM.
+              </p>
+            </div>
+
+            <!-- Pipeline Visual Spec -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 font-mono text-xs">
+              <div class="p-3 bg-canvas-high border-2 border-black rounded-lg">
+                <span class="text-[10px] text-ink-muted uppercase block font-bold">[PREPROCESSING]</span>
+                <span class="text-black font-bold block mt-0.5">LAB Color-Space</span>
+                <span class="text-[10px] text-ink-muted">Butterworth Filtering</span>
+              </div>
+              <div class="p-3 bg-canvas-high border-2 border-black rounded-lg">
+                <span class="text-[10px] text-ink-muted uppercase block font-bold">[FEATURE FUSION]</span>
+                <span class="text-black font-bold block mt-0.5">CNN + LBP / GLCM</span>
+                <span class="text-[10px] text-ink-muted">EfficientNetB0, ResNet50</span>
+              </div>
+              <div class="p-3 bg-canvas-high border-2 border-black rounded-lg">
+                <span class="text-[10px] text-ink-muted uppercase block font-bold">[DIMENSIONALITY]</span>
+                <span class="text-black font-bold block mt-0.5">PCA Optimization</span>
+                <span class="text-[10px] text-accent-deep font-bold">95% Variance Retained</span>
+              </div>
+              <div class="p-3 bg-canvas-high border-2 border-black rounded-lg">
+                <span class="text-[10px] text-ink-muted uppercase block font-bold">[CLASSIFIER]</span>
+                <span class="text-black font-bold block mt-0.5">Optimal SVM</span>
+                <span class="text-[10px] text-accent-deep font-bold">0.9999 AUC-ROC</span>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 pt-2">
+              <button class="px-5 py-2.5 rounded-lg bg-surface-dark text-white hover:bg-black font-mono text-xs font-bold uppercase shadow-stamped border border-black inline-flex items-center gap-1.5 transition-all" onclick="openCaseStudy('blood')">
+                <span>View Case Study</span>
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+              </button>
+              <a class="px-4 py-2.5 rounded-lg bg-surface hover:bg-canvas-card border-2 border-black font-mono text-xs font-bold inline-flex items-center gap-1.5" href="https://github.com/OmarElHawy/blood-cell-image-analysis" rel="noopener noreferrer" target="_blank" aria-label="Blood Cell Analysis GitHub Repository">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">code</span>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 05: EGYPTIAN PREMIER LEAGUE RAG ASSISTANT -->
+        <article class="bg-surface rounded-2xl border-2 border-black shadow-brutal-lg overflow-hidden">
+          <div class="bg-black text-white px-5 py-3 flex flex-wrap items-center justify-between gap-2 border-b-2 border-black">
+            <span class="text-xs font-mono font-bold text-accent uppercase tracking-wider">05 // GENERATIVE AI / RAG</span>
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded bg-accent text-black font-mono text-[11px] font-bold">4,434 Chunks</span>
+              <span class="px-2 py-0.5 rounded bg-white text-black font-mono text-[11px] font-bold">40/40 Test Success</span>
+            </div>
+          </div>
+          <div class="p-5 sm:p-7 space-y-6">
+            <div class="space-y-3">
+              <h3 class="anton-heading text-2xl sm:text-3xl md:text-4xl text-black">
+                EGYPTIAN PREMIER LEAGUE RAG ASSISTANT
+              </h3>
+              <p class="text-sm text-ink-soft leading-relaxed max-w-3xl">
+                An end-to-end RAG Q&amp;A system over Egyptian Premier League 2015-2026 data. Built with FastAPI, Streamlit, ChromaDB, and Ollama. Implements deterministic guards, intent-aware reranking, and source attribution across 4,434 semantic chunks.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2 font-mono text-xs">
+              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">FastAPI</span>
+              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">Streamlit</span>
+              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">ChromaDB</span>
+              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">Ollama</span>
+              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">RAG</span>
+            </div>
+
+            <div class="flex items-center gap-3 pt-2">
+              <button class="px-5 py-2.5 rounded-lg bg-surface-dark text-white hover:bg-black font-mono text-xs font-bold uppercase shadow-stamped border border-black inline-flex items-center gap-1.5 transition-all" onclick="openCaseStudy('epl_rag')">
+                <span>View Case Study</span>
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+              </button>
+              <a class="px-4 py-2.5 rounded-lg bg-surface hover:bg-canvas-card border-2 border-black font-mono text-xs font-bold inline-flex items-center gap-1.5" href="https://github.com/OmarElHawy/Egyptian-Premier-League-RAG" rel="noopener noreferrer" target="_blank" aria-label="Egyptian Premier League RAG GitHub Repository">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">code</span>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 06: RAG-BASED E-COMMERCE CUSTOMER SUPPORT CHATBOT -->
+        <article class="bg-surface rounded-2xl border-2 border-black shadow-brutal-lg overflow-hidden">
+          <div class="bg-black text-white px-5 py-3 flex flex-wrap items-center justify-between gap-2 border-b-2 border-black">
+            <span class="text-xs font-mono font-bold text-accent uppercase tracking-wider">06 // GENERATIVE AI / RAG</span>
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded bg-accent text-black font-mono text-[11px] font-bold">100% Local</span>
+              <span class="px-2 py-0.5 rounded bg-white text-black font-mono text-[11px] font-bold">Grounded RAG</span>
+            </div>
+          </div>
+          <div class="p-5 sm:p-7 space-y-6">
+            <div class="space-y-3">
+              <h3 class="anton-heading text-2xl sm:text-3xl md:text-4xl text-black">
+                RAG-BASED E-COMMERCE CUSTOMER SUPPORT CHATBOT
+              </h3>
+              <p class="text-sm text-ink-soft leading-relaxed max-w-3xl">
+                A locally-run RAG-based customer support chatbot for e-commerce, using Ollama, ChromaDB, and Streamlit. Provides context-aware answers from a store's internal FAQ knowledge base that reduces hallucinations with grounding checks and guardrails, with no cloud costs.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2 font-mono text-xs">
+              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">Ollama</span>
+              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">ChromaDB</span>
+              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">Streamlit</span>
+              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">RAG</span>
+              <span class="px-2.5 py-1 rounded bg-canvas-high border border-black font-semibold">E-Commerce</span>
+            </div>
+
+            <div class="flex items-center gap-3 pt-2">
+              <button class="px-5 py-2.5 rounded-lg bg-surface-dark text-white hover:bg-black font-mono text-xs font-bold uppercase shadow-stamped border border-black inline-flex items-center gap-1.5 transition-all" onclick="openCaseStudy('ecommerce_rag')">
+                <span>View Case Study</span>
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+              </button>
+              <a class="px-4 py-2.5 rounded-lg bg-surface hover:bg-canvas-card border-2 border-black font-mono text-xs font-bold inline-flex items-center gap-1.5" href="https://github.com/OmarElHawy/RAG-Based-E-Commerce-Customer-Support-Chatbot" rel="noopener noreferrer" target="_blank" aria-label="RAG-Based E-Commerce Customer Support Chatbot GitHub Repository">
+                <span class="material-symbols-outlined text-sm" aria-hidden="true">code</span>
+                <span>GitHub</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- HOW I THINK (ENGINEERING PHILOSOPHY) -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 space-y-8" id="methodology">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b-2 border-black pb-4">
+        <div>
+          <span class="text-xs font-mono text-black font-bold uppercase tracking-wider">// ENGINEERING PHILOSOPHY</span>
+          <h2 class="anton-heading text-4xl sm:text-5xl md:text-6xl text-black mt-1">HOW I THINK</h2>
+        </div>
+        <p class="text-xs font-mono text-ink-muted font-bold">Problem → Understand → Build → Test → Measure → Deploy</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <!-- Step 1 -->
+        <div class="p-5 rounded-xl bg-surface border-2 border-black shadow-brutal space-y-2.5">
+          <div class="flex items-center justify-between text-xs font-mono">
+            <span class="bg-black text-white px-2 py-0.5 rounded font-bold">01 / SCOPE</span>
+            <span class="material-symbols-outlined text-black" aria-hidden="true">tune</span>
+          </div>
+          <h3 class="font-mono font-bold text-base text-black uppercase">Problem Formulation</h3>
+          <p class="text-xs text-ink-soft leading-relaxed">
+            Deconstruct client requirements into concrete ML paradigms: classification, generative retrieval, sequence generation, or discrete constraint optimization.
+          </p>
+          <div class="pt-2 text-[11px] font-mono text-ink-muted border-t border-black/10">Tools: Mathematical Modeling • CSP Formulation</div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="p-5 rounded-xl bg-surface border-2 border-black shadow-brutal space-y-2.5">
+          <div class="flex items-center justify-between text-xs font-mono">
+            <span class="bg-black text-white px-2 py-0.5 rounded font-bold">02 / DATA</span>
+            <span class="material-symbols-outlined text-black" aria-hidden="true">dataset</span>
+          </div>
+          <h3 class="font-mono font-bold text-base text-black uppercase">Data Engineering</h3>
+          <p class="text-xs text-ink-soft leading-relaxed">
+            Feature engineering, data augmentation, and statistical analysis. Audio spectrogram transformation, dialectal text normalization, LAB color-space conversion, Butterworth filtering, and recursive text chunking.
+          </p>
+          <div class="pt-2 text-[11px] font-mono text-ink-muted border-t border-black/10">Tools: Pandas • NumPy • Librosa • OpenCV</div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="p-5 rounded-xl bg-surface border-2 border-black shadow-brutal space-y-2.5">
+          <div class="flex items-center justify-between text-xs font-mono">
+            <span class="bg-black text-white px-2 py-0.5 rounded font-bold">03 / MODEL</span>
+            <span class="material-symbols-outlined text-black" aria-hidden="true">model_training</span>
+          </div>
+          <h3 class="font-mono font-bold text-base text-black uppercase">Model Adaptation</h3>
+          <p class="text-xs text-ink-soft leading-relaxed">
+            Training CNNs, RNNs, Transformers, and custom architectures. Fine-tune Whisper-small, transfer learn deep CNN features (EfficientNet, ResNet), train custom SVM classifiers, or configure vector indices.
+          </p>
+          <div class="pt-2 text-[11px] font-mono text-ink-muted border-t border-black/10">Tools: PyTorch • scikit-learn • FAISS FlatL2</div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="p-5 rounded-xl bg-surface border-2 border-black shadow-brutal space-y-2.5">
+          <div class="flex items-center justify-between text-xs font-mono">
+            <span class="bg-black text-white px-2 py-0.5 rounded font-bold">04 / GUARD</span>
+            <span class="material-symbols-outlined text-black" aria-hidden="true">shield</span>
+          </div>
+          <h3 class="font-mono font-bold text-base text-black uppercase">Grounding &amp; Safety</h3>
+          <p class="text-xs text-ink-soft leading-relaxed">
+            Construct LangChain LCEL pipelines with regex pattern evaluation, context verification, and deterministic constraints that reduce hallucinations with grounding checks and guardrails.
+          </p>
+          <div class="pt-2 text-[11px] font-mono text-ink-muted border-t border-black/10">Tools: LangChain LCEL • LangServe • Python</div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="p-5 rounded-xl bg-surface border-2 border-black shadow-brutal space-y-2.5">
+          <div class="flex items-center justify-between text-xs font-mono">
+            <span class="bg-black text-white px-2 py-0.5 rounded font-bold">05 / PIPELINE</span>
+            <span class="material-symbols-outlined text-black" aria-hidden="true">terminal</span>
+          </div>
+          <h3 class="font-mono font-bold text-base text-black uppercase">Automation &amp; Serving</h3>
+          <p class="text-xs text-ink-soft leading-relaxed">
+            Wrap inference logic into modular FastAPI REST services or end-to-end n8n workflows integrating webhooks, Slack channels, and database feeds.
+          </p>
+          <div class="pt-2 text-[11px] font-mono text-ink-muted border-t border-black/10">Tools: FastAPI • n8n Workflows • Webhooks</div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="p-5 rounded-xl bg-surface border-2 border-black shadow-brutal space-y-2.5">
+          <div class="flex items-center justify-between text-xs font-mono">
+            <span class="bg-accent text-black px-2 py-0.5 rounded font-bold border border-black">06 / VERIFY</span>
+            <span class="material-symbols-outlined text-black" aria-hidden="true">query_stats</span>
+          </div>
+          <h3 class="font-mono font-bold text-base text-black uppercase">Empirical Evaluation</h3>
+          <p class="text-xs text-ink-soft leading-relaxed">
+            Validate on hold-out splits: Word Error Rate (WER) on speech, ROC-AUC on classification, and latency profiling on vector searches.
+          </p>
+          <div class="pt-2 text-[11px] font-mono text-ink-muted border-t border-black/10">Tools: Matplotlib • Seaborn • Benchmarking</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I CAN BUILD (CLIENT-ORIENTED UPWORK SERVICES) -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 space-y-8" id="services">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 border-b-2 border-black pb-4">
+        <div>
+          <span class="text-xs font-mono text-black font-bold uppercase tracking-wider">// CONTRACT &amp; CLIENT SERVICES</span>
+          <h2 class="anton-heading text-4xl sm:text-5xl md:text-6xl text-black mt-1">WHAT I CAN BUILD</h2>
+        </div>
+        <p class="text-xs font-mono text-ink-muted">Available for Upwork contracts, direct consulting &amp; specialized builds</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Service: Deep Learning & Custom Model Training -->
+        <div class="p-6 rounded-xl bg-surface border-2 border-black shadow-brutal flex flex-col justify-between hover:bg-canvas-card transition-colors">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-accent border-2 border-black flex items-center justify-center">
+              <span class="material-symbols-outlined text-black text-2xl" aria-hidden="true">model_training</span>
+            </div>
+            <h3 class="font-mono font-bold text-base text-black">Deep Learning &amp; Custom Model Training</h3>
+            <p class="text-xs text-ink-soft leading-relaxed">
+              End-to-end model development: CNNs, RNNs, and Transformers. Fine-tuning, transfer learning, and hyperparameter optimization for specialized use cases.
+            </p>
+          </div>
+          <a class="inline-flex items-center gap-1.5 text-black font-mono text-xs font-bold uppercase tracking-wider mt-5 hover:text-accent-deep" href="#contact">
+            <span>Discuss a Project →</span>
+          </a>
+        </div>
+
+        <!-- Service 1 -->
+        <div class="p-6 rounded-xl bg-surface border-2 border-black shadow-brutal flex flex-col justify-between hover:bg-canvas-card transition-colors">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-accent border-2 border-black flex items-center justify-center">
+              <span class="material-symbols-outlined text-black text-2xl" aria-hidden="true">smart_toy</span>
+            </div>
+            <h3 class="font-mono font-bold text-base text-black">Generative AI &amp; Autonomous Agents</h3>
+            <p class="text-xs text-ink-soft leading-relaxed">
+              Custom LLM integrations, multi-step prompt chains, agentic tool invocation, and structured output formatting for business workflows.
+            </p>
+          </div>
+          <a class="inline-flex items-center gap-1.5 text-black font-mono text-xs font-bold uppercase tracking-wider mt-5 hover:text-accent-deep" href="#contact">
+            <span>Discuss a Project →</span>
+          </a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="p-6 rounded-xl bg-surface border-2 border-black shadow-brutal flex flex-col justify-between hover:bg-canvas-card transition-colors">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-accent border-2 border-black flex items-center justify-center">
+              <span class="material-symbols-outlined text-black text-2xl" aria-hidden="true">database</span>
+            </div>
+            <h3 class="font-mono font-bold text-base text-black">RAG Knowledge Assistants</h3>
+            <p class="text-xs text-ink-soft leading-relaxed">
+              Private vector database setups (FAISS/Pinecone) connected to internal documentation with strict grounding verification that reduces hallucinations with grounding checks and guardrails.
+            </p>
+          </div>
+          <a class="inline-flex items-center gap-1.5 text-black font-mono text-xs font-bold uppercase tracking-wider mt-5 hover:text-accent-deep" href="#contact">
+            <span>Discuss a Project →</span>
+          </a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="p-6 rounded-xl bg-surface border-2 border-black shadow-brutal flex flex-col justify-between hover:bg-canvas-card transition-colors">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-accent border-2 border-black flex items-center justify-center">
+              <span class="material-symbols-outlined text-black text-2xl" aria-hidden="true">terminal</span>
+            </div>
+            <h3 class="font-mono font-bold text-base text-black">AI Automation &amp; Workflows</h3>
+            <p class="text-xs text-ink-soft leading-relaxed">
+              Complete n8n orchestration connecting webhooks, CRM/Slack channels, automated reporting bots, and background batch processors.
+            </p>
+          </div>
+          <a class="inline-flex items-center gap-1.5 text-black font-mono text-xs font-bold uppercase tracking-wider mt-5 hover:text-accent-deep" href="#contact">
+            <span>Discuss a Project →</span>
+          </a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="p-6 rounded-xl bg-surface border-2 border-black shadow-brutal flex flex-col justify-between hover:bg-canvas-card transition-colors">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-accent border-2 border-black flex items-center justify-center">
+              <span class="material-symbols-outlined text-black text-2xl" aria-hidden="true">timeline</span>
+            </div>
+            <h3 class="font-mono font-bold text-base text-black">Custom ML Pipelines</h3>
+            <p class="text-xs text-ink-soft leading-relaxed">
+              Feature extraction, data preprocessing, model selection, hyperparameter tuning, and containerized deployment with REST API endpoints.
+            </p>
+          </div>
+          <a class="inline-flex items-center gap-1.5 text-black font-mono text-xs font-bold uppercase tracking-wider mt-5 hover:text-accent-deep" href="#contact">
+            <span>Discuss a Project →</span>
+          </a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="p-6 rounded-xl bg-surface border-2 border-black shadow-brutal flex flex-col justify-between hover:bg-canvas-card transition-colors">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-accent border-2 border-black flex items-center justify-center">
+              <span class="material-symbols-outlined text-black text-2xl" aria-hidden="true">deployed_code</span>
+            </div>
+            <h3 class="font-mono font-bold text-base text-black">Computer Vision Solutions</h3>
+            <p class="text-xs text-ink-soft leading-relaxed">
+              Object detection with pretrained YOLO models, quality inspection pipelines, image segmentation, and visual biometric classification.
+            </p>
+          </div>
+          <a class="inline-flex items-center gap-1.5 text-black font-mono text-xs font-bold uppercase tracking-wider mt-5 hover:text-accent-deep" href="#contact">
+            <span>Discuss a Project →</span>
+          </a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="p-6 rounded-xl bg-surface border-2 border-black shadow-brutal flex flex-col justify-between hover:bg-canvas-card transition-colors">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-lg bg-accent border-2 border-black flex items-center justify-center">
+              <span class="material-symbols-outlined text-black text-2xl" aria-hidden="true">mic</span>
+            </div>
+            <h3 class="font-mono font-bold text-base text-black">Applied NLP &amp; Speech (STT)</h3>
+            <p class="text-xs text-ink-soft leading-relaxed">
+              Whisper fine-tuning for regional dialects (including Egyptian Arabic), audio preprocessing, named-entity recognition, and semantic search.
+            </p>
+          </div>
+          <a class="inline-flex items-center gap-1.5 text-black font-mono text-xs font-bold uppercase tracking-wider mt-5 hover:text-accent-deep" href="#contact">
+            <span>Discuss a Project →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAINING & INTERNSHIPS -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 space-y-8" id="experience">
+      <div class="border-b-2 border-black pb-4">
+        <span class="text-xs font-mono text-black font-bold uppercase tracking-wider">// TRAINING &amp; INTERNSHIPS</span>
+        <h2 class="anton-heading text-4xl sm:text-5xl md:text-6xl text-black mt-1">TRAINING &amp; INTERNSHIPS</h2>
+      </div>
+
+      <div class="relative border-l-4 border-black ml-3 sm:ml-4 space-y-7 pl-6 sm:pl-8">
+        <!-- Exp 1 -->
+        <div class="relative">
+          <span class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-accent border-2 border-black" aria-hidden="true"></span>
+          <div class="flex flex-wrap items-center justify-between gap-1">
+            <h3 class="text-base font-bold text-black font-mono">AI Automation Workflow with N8N Professional</h3>
+            <span class="text-xs font-mono font-bold px-2 py-0.5 bg-black text-white rounded">07/2026 – Present</span>
+          </div>
+          <div class="text-xs font-mono font-semibold text-ink-muted mt-0.5">Digital Egypt Pioneers Initiative (DEPI)</div>
+          <p class="text-xs text-ink-soft mt-2 leading-relaxed">
+            Building AI automation workflows with n8n: webhooks, Slack, email and AI agents.
+          </p>
+        </div>
+
+        <!-- Exp 2 -->
+        <div class="relative">
+          <span class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-accent border-2 border-black" aria-hidden="true"></span>
+          <div class="flex flex-wrap items-center justify-between gap-1">
+            <h3 class="text-base font-bold text-black font-mono">Advanced AI</h3>
+            <span class="text-xs font-mono font-bold px-2 py-0.5 bg-black text-white rounded">07/2026 – Present</span>
+          </div>
+          <div class="text-xs font-mono font-semibold text-ink-muted mt-0.5">Information Technology Institute (ITI)</div>
+          <p class="text-xs text-ink-soft mt-2 leading-relaxed">
+            Working with pretrained YOLO, NLP pipelines and RAG systems using LangChain and vector databases.
+          </p>
+        </div>
+
+        <!-- Exp 3 -->
+        <div class="relative">
+          <span class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-white border-2 border-black" aria-hidden="true"></span>
+          <div class="flex flex-wrap items-center justify-between gap-1">
+            <h3 class="text-base font-bold text-black font-mono">Building RAG Agents with LLMs</h3>
+            <span class="text-xs font-mono font-bold px-2 py-0.5 bg-canvas-card border border-black text-black">01/2026 – 02/2026</span>
+          </div>
+          <div class="text-xs font-mono font-semibold text-ink-muted mt-0.5">Information Technology Institute (ITI)</div>
+          <p class="text-xs text-ink-soft mt-2 leading-relaxed">
+            Designing RAG pipelines with FAISS vector store, semantic document retrieval, prompt engineering, and grounded response evaluation.
+          </p>
+        </div>
+
+        <!-- Exp 4 -->
+        <div class="relative">
+          <span class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-white border-2 border-black" aria-hidden="true"></span>
+          <div class="flex flex-wrap items-center justify-between gap-1">
+            <h3 class="text-base font-bold text-black font-mono">Generative AI</h3>
+            <span class="text-xs font-mono font-bold px-2 py-0.5 bg-canvas-card border border-black text-black">09/2025 – 10/2025</span>
+          </div>
+          <div class="text-xs font-mono font-semibold text-ink-muted mt-0.5">Information Technology Institute (ITI)</div>
+          <p class="text-xs text-ink-soft mt-2 leading-relaxed">
+            Building applications with Large Language Models for text generation, summarization, Q&amp;A tasks, and prompt engineering.
+          </p>
+        </div>
+
+        <!-- Exp 5 -->
+        <div class="relative">
+          <span class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-white border-2 border-black" aria-hidden="true"></span>
+          <div class="flex flex-wrap items-center justify-between gap-1">
+            <h3 class="text-base font-bold text-black font-mono">Data Analysis with Python (Score: 98%)</h3>
+            <span class="text-xs font-mono font-bold px-2 py-0.5 bg-canvas-card border border-black text-black">09/2025 – 10/2025</span>
+          </div>
+          <div class="text-xs font-mono font-semibold text-ink-muted mt-0.5">National Telecommunication Institute (NTI)</div>
+          <p class="text-xs text-ink-soft mt-2 leading-relaxed">
+            Data cleaning, preprocessing, exploratory data analysis (EDA), and data visualization with Pandas, NumPy, Matplotlib, and Seaborn.
+          </p>
+        </div>
+
+        <!-- Exp 6 -->
+        <div class="relative">
+          <span class="absolute -left-[33px] sm:-left-[41px] top-1.5 w-4 h-4 rounded-full bg-white border-2 border-black" aria-hidden="true"></span>
+          <div class="flex flex-wrap items-center justify-between gap-1">
+            <h3 class="text-base font-bold text-black font-mono">Artificial Intelligence</h3>
+            <span class="text-xs font-mono font-bold px-2 py-0.5 bg-canvas-card border border-black text-black">08/2025 – 09/2025</span>
+          </div>
+          <div class="text-xs font-mono font-semibold text-ink-muted mt-0.5">WE – Telecom Egypt</div>
+          <p class="text-xs text-ink-soft mt-2 leading-relaxed">
+            Foundational machine learning workflows, data preprocessing, feature engineering, and model lifecycle concepts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT OMAR NASSER (HUMAN & PERSONAL) -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 space-y-6" id="about">
+      <div class="border-b-2 border-black pb-4">
+        <span class="text-xs font-mono text-black font-bold uppercase tracking-wider">// PROFILE &amp; IDENTITY</span>
+        <h2 class="anton-heading text-4xl sm:text-5xl md:text-6xl text-black mt-1">ABOUT OMAR NASSER</h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+        <div class="lg:col-span-8 p-6 bg-surface border-2 border-black rounded-xl shadow-brutal space-y-4">
+          <h3 class="anton-heading text-2xl sm:text-3xl text-black">
+            "I LIKE TURNING MESSY PROBLEMS INTO WORKING SYSTEMS."
+          </h3>
+          <p class="text-sm text-ink-soft leading-relaxed">
+            I am an AI Engineer and Data Science student at the <strong class="text-black font-semibold">Egypt-Japan University of Science and Technology (E-JUST)</strong> in Alexandria, Egypt. My practical approach to machine learning is grounded in reality: theoretical accuracy only matters if the deployed inference pipeline can reliably handle messy, real-world data at scale.
+          </p>
+          <p class="text-sm text-ink-soft leading-relaxed">
+            Through competitive technical programs with <strong class="text-black font-semibold">DEPI</strong> (Digital Egypt Pioneers Initiative), <strong class="text-black font-semibold">ITI</strong> (Information Technology Institute), <strong class="text-black font-semibold">NTI</strong> (National Telecommunication Institute), and <strong class="text-black font-semibold">WE Telecom Egypt</strong>, I focus on applied engineering: building custom Arabic speech models, resilient LangChain RAG systems, and enterprise workflow automations. Beyond specific projects, I have hands-on experience with a wide range of AI domains including classical Machine Learning, Deep Learning architectures (Transformers, CNNs), and advanced computer vision and NLP techniques.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-3 font-mono text-xs font-bold text-black border-t border-black/10">
+            <span class="bg-accent px-2 py-0.5 border border-black">DEGREE: B.SC. IN AI &amp; DATA SCIENCE</span>
+            <span class="bg-white px-2 py-0.5 border border-black">LOCATION: ALEXANDRIA, EGYPT (UTC+2)</span>
+          </div>
+        </div>
+
+        <div class="lg:col-span-4 p-5 rounded-xl bg-surface-dark text-white border-2 border-black shadow-brutal space-y-3">
+          <div class="text-xs font-mono font-bold text-accent uppercase tracking-wider">[VERIFIED ACCREDITATIONS]</div>
+          <div class="space-y-2.5 font-mono text-xs">
+            <div class="pb-2 border-b border-white/20">
+              <div class="text-white font-bold">E-JUST</div>
+              <div class="text-gray-400 text-[11px]">Egypt-Japan Univ. of Science &amp; Technology</div>
+            </div>
+            <div class="pb-2 border-b border-white/20">
+              <div class="text-white font-bold">ITI // NVIDIA DLI Generative AI</div>
+              <div class="text-gray-400 text-[11px]">Advanced Level • 100 Hours Intensive</div>
+            </div>
+            <div class="pb-2 border-b border-white/20">
+              <div class="text-white font-bold">DEPI // n8n Workflows</div>
+              <div class="text-gray-400 text-[11px]">Digital Egypt Pioneers Automation Track</div>
+            </div>
+            <div>
+              <div class="text-white font-bold">NTI // Python Data Analysis</div>
+              <div class="text-accent text-[11px] font-bold">Final Score: 98% (72 Hours)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GITHUB & OPEN SOURCE BAND (TERMINAL STYLING ON DARK) -->
+    <section class="bg-surface-dark text-white border-y-4 border-black py-10 px-4 sm:px-6">
+      <div class="max-w-5xl mx-auto space-y-6">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div class="space-y-1">
+            <span class="text-xs font-mono uppercase text-accent font-bold">// OPEN SOURCE CODEBASES</span>
+            <h3 class="anton-heading text-3xl sm:text-4xl text-white">UNDER THE HOOD</h3>
+            <p class="text-xs text-gray-300 font-mono">Want to see how it works under the hood? Explore my repositories.</p>
+          </div>
+          <a class="px-5 py-2.5 bg-accent hover:bg-accent-deep text-black font-mono text-xs font-bold uppercase rounded-lg shadow-stamped border-2 border-black inline-flex items-center gap-2 self-start sm:self-auto transition-all" href="https://github.com/OmarElHawy" rel="noopener noreferrer" target="_blank" aria-label="Visit Omar Nasser GitHub Profile in new tab">
+            <span class="material-symbols-outlined text-sm" aria-hidden="true">code</span>
+            <span>github.com/OmarElHawy</span>
+          </a>
+        </div>
+
+        <div class="p-4 bg-black border-2 border-white/20 rounded-xl font-mono text-xs space-y-2">
+          <div class="flex items-center gap-2 text-gray-400 border-b border-white/10 pb-2">
+            <span class="w-2.5 h-2.5 rounded-full bg-red-500" aria-hidden="true"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-yellow-500" aria-hidden="true"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-accent" aria-hidden="true"></span>
+            <span class="text-[11px] ml-2">bash — omar@ejust-ai:~$</span>
+          </div>
+          <div class="pt-1 text-white">
+            <span class="text-accent font-bold">$</span> git clone https://github.com/OmarElHawy/SmartDoc-RAG-Agent.git
+          </div>
+          <div class="text-gray-400 text-[11px]">
+            &gt; Cloning into 'SmartDoc-RAG-Agent'... remote: Compressing objects: 100% done.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION & PROJECT INITIATION -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 space-y-8 pt-4 pb-12" id="contact">
+      <div class="border-b-2 border-black pb-4">
+        <span class="text-xs font-mono text-black font-bold uppercase tracking-wider">// INITIATE ENGAGEMENT</span>
+        <h2 class="anton-heading text-4xl sm:text-5xl md:text-6xl text-black mt-1">
+          HAVE A PROBLEM WORTH SOLVING? LET'S BUILD SOMETHING INTELLIGENT.
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <!-- Direct coordinates -->
+        <div class="lg:col-span-5 space-y-4">
+          <p class="text-sm text-ink-soft leading-relaxed">
+            I am currently open to select AI engineering roles, custom consulting, and freelance RAG/ML builds. Copy my details below or submit a brief inquiry.
+          </p>
+
+          <div class="space-y-3 font-mono text-xs">
+            <!-- Email -->
+            <div class="p-3.5 rounded-xl bg-surface border-2 border-black shadow-brutal flex items-center justify-between">
+              <div class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-black text-lg" aria-hidden="true">mail</span>
+                <span class="text-black font-bold select-all">omarr.elhawyy@gmail.com</span>
+              </div>
+              <button aria-label="Copy Email to clipboard" class="px-2 py-1 bg-canvas-card border border-black hover:bg-accent rounded text-[11px] font-bold transition-colors" onclick="copyTextToClipboard('omarr.elhawyy@gmail.com', 'Email')">
+                COPY
+              </button>
+            </div>
+
+            <!-- Phone -->
+            <div class="p-3.5 rounded-xl bg-surface border-2 border-black shadow-brutal flex items-center justify-between">
+              <div class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-black text-lg" aria-hidden="true">call</span>
+                <span class="text-black font-bold select-all">+201285407011</span>
+              </div>
+              <button aria-label="Copy Phone number to clipboard" class="px-2 py-1 bg-canvas-card border border-black hover:bg-accent rounded text-[11px] font-bold transition-colors" onclick="copyTextToClipboard('+201285407011', 'Phone')">
+                COPY
+              </button>
+            </div>
+
+            <!-- LinkedIn -->
+            <div class="p-3.5 rounded-xl bg-surface border-2 border-black shadow-brutal flex items-center justify-between">
+              <div class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 fill-current text-black flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.2a1.66 1.66 0 0 0-1.66 1.66c0 .92.74 1.66 1.66 1.66.92 0 1.66-.74 1.66-1.66 0-.92-.74-1.66-1.66-1.66Z"/></svg>
+                <span class="text-black font-bold">Omar Nasser</span>
+              </div>
+              <a href="https://www.linkedin.com/in/omar-nasser-aab951303/" rel="noopener noreferrer" target="_blank" aria-label="Visit LinkedIn Profile" class="px-2 py-1 bg-canvas-card border border-black hover:bg-accent rounded text-[11px] font-bold transition-colors inline-flex items-center gap-1">
+                CONNECT ↗
+              </a>
+            </div>
+
+            <!-- Upwork -->
+            <div class="p-3.5 rounded-xl bg-surface border-2 border-black shadow-brutal flex items-center justify-between">
+              <div class="flex items-center gap-2.5">
+                <svg class="w-4 h-4 fill-current text-black flex-shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.561 13.158c-1.102 0-2.135-.467-3.074-1.227l.228-1.076.008-.042c.207-1.143.849-3.06 2.839-3.06 1.492 0 2.703 1.212 2.703 2.703-.001 1.489-1.212 2.702-2.704 2.702zm0-8.14c-2.539 0-4.51 1.649-5.31 4.366-1.22-1.834-2.148-4.036-2.687-5.892H7.828v7.112c-.002 1.406-1.141 2.546-2.547 2.546-1.405 0-2.543-1.14-2.545-2.546V3.492H0v7.112c0 2.914 2.37 5.303 5.281 5.303 2.913 0 5.283-2.389 5.283-5.303v-1.19c.529 1.107 1.182 2.229 1.974 3.221l-1.673 7.873h2.797l1.213-5.71c1.063.679 2.285 1.109 3.686 1.109 3 0 5.439-2.452 5.439-5.45 0-3-2.439-5.439-5.439-5.439z"/></svg>
+                <span class="text-black font-bold">Omar Nasser</span>
+              </div>
+              <a href="https://www.upwork.com/freelancers/~0188788a3622ea7489?mp_source=share" rel="noopener noreferrer" target="_blank" aria-label="Hire on Upwork" class="px-2 py-1 bg-canvas-card border border-black hover:bg-accent rounded text-[11px] font-bold transition-colors inline-flex items-center gap-1">
+                HIRE ↗
+              </a>
+            </div>
+
+            <!-- Location -->
+            <div class="p-3.5 rounded-xl bg-surface border-2 border-black shadow-brutal flex items-center justify-between">
+              <div class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-black text-lg" aria-hidden="true">location_on</span>
+                <span class="text-black font-bold">Alexandria, Egypt</span>
+              </div>
+              <span class="bg-accent px-2 py-0.5 border border-black text-[11px] font-bold">UTC+2</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Inquiry Form -->
+        <div class="lg:col-span-7">
+                    <form class="p-6 rounded-2xl bg-surface border-2 border-black shadow-brutal-lg space-y-4" id="contactForm">
+            <div class="space-y-4 mb-4">
+              <!-- Name -->
+              <input type="text" name="from_name" id="from_name" required placeholder="Your Name" class="w-full block rounded-lg bg-canvas-high border-2 border-black text-black text-xs font-mono font-semibold focus:border-black focus:ring-0 p-3">
+              <!-- Email -->
+              <input type="email" name="from_email" id="from_email" required placeholder="Your Email" class="w-full block rounded-lg bg-canvas-high border-2 border-black text-black text-xs font-mono font-semibold focus:border-black focus:ring-0 p-3">
+            </div>
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase text-black mb-1.5" for="inquiryScope">
+                Project Scope / Engagement Type
+              </label>
+              <select class="w-full rounded-lg bg-canvas-high border-2 border-black text-black text-xs font-mono font-semibold focus:border-black focus:ring-0 p-3" id="inquiryScope" name="scope">
+                <option value="Generative AI &amp; RAG Assistant Project">Generative AI &amp; RAG Assistant Project</option>
+                <option value="RAG System Development &amp; Integration">RAG System Development &amp; Integration</option>
+                <option value="AI Workflow Automation (n8n &amp; APIs)">AI Workflow Automation (n8n &amp; APIs)</option>
+                <option value="Custom Computer Vision / ML Implementation">Custom Computer Vision / ML Implementation</option>
+                <option value="Speech to Text (Arabic STT) &amp; NLP">Speech to Text (Arabic STT) &amp; NLP</option>
+                <option value="Full-Time / Freelance AI Engineer Role">Full-Time / Freelance AI Engineer Role</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label class="block text-xs font-mono font-bold uppercase text-black mb-1.5" for="inquiryMsg">
+                Project Details &amp; Objectives
+              </label>
+              <textarea class="w-full rounded-lg bg-canvas-high border-2 border-black text-black placeholder:text-ink-muted text-xs font-mono focus:border-black focus:ring-0 p-3" id="inquiryMsg" name="message" placeholder="Outline your deliverables, dataset availability, or timeline..." rows="4"></textarea>
+            </div>
+            <button class="w-full py-3.5 rounded-lg bg-surface-dark hover:bg-black text-white font-mono text-xs font-bold uppercase tracking-wider shadow-stamped border-2 border-black transition-all flex items-center justify-center gap-2" type="submit" id="inquirySubmitBtn">
+              <span>Send Project Inquiry</span>
+              <span class="material-symbols-outlined text-sm" aria-hidden="true">send</span>
+            </button>
+            <!-- Fallback mailto -->
+            <p class="text-center text-[11px] font-mono text-ink-muted pt-1">
+              Or email me directly at
+              <a href="mailto:omarr.elhawyy@gmail.com" class="text-black font-bold underline hover:text-ink-soft transition-colors">omarr.elhawyy@gmail.com</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CASE STUDY MODAL OVERLAY -->
+  <div class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4 overflow-y-auto" id="caseStudyModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="rounded-2xl bg-surface border-4 border-black max-w-2xl w-full p-6 space-y-4 shadow-brutal-lg relative max-h-[85vh] overflow-y-auto">
+      <div class="flex justify-between items-start border-b-2 border-black pb-3">
+        <div>
+          <span class="text-xs font-mono font-bold text-ink-muted uppercase tracking-wider" id="modalCategory">PROJECT DEEP DIVE</span>
+          <h3 class="anton-heading text-2xl sm:text-3xl text-black mt-1" id="modalTitle">Case Study</h3>
+        </div>
+        <button aria-label="Close Case Study Modal" class="p-1 border-2 border-black rounded hover:bg-accent transition-colors" onclick="closeCaseStudy()">
+          <span class="material-symbols-outlined" aria-hidden="true">close</span>
+        </button>
+      </div>
+
+      <div class="space-y-4 text-xs text-ink-soft leading-relaxed font-sans">
+        <div>
+          <h4 class="font-bold text-black font-mono text-xs uppercase mb-1">Architecture &amp; Solution</h4>
+          <p id="modalSolution"></p>
+        </div>
+        <div>
+          <h4 class="font-bold text-black font-mono text-xs uppercase mb-1">Implementation Highlights</h4>
+          <ul class="list-disc list-inside space-y-1 font-mono text-[11px]" id="modalHighlights"></ul>
+        </div>
+        <div class="p-3 bg-canvas-high border-2 border-black rounded-lg font-mono">
+          <span class="text-[10px] text-ink-muted uppercase block mb-1 font-bold">Verified Metrics</span>
+          <div class="text-black font-bold text-xs" id="modalMetrics"></div>
+        </div>
+        <div>
+          <h4 class="font-bold text-black font-mono text-xs uppercase mb-1">Key Takeaway</h4>
+          <p id="modalLessons"></p>
+        </div>
+      </div>
+
+      <div class="pt-3 border-t-2 border-black flex justify-end">
+        <button class="px-5 py-2 rounded-lg bg-surface-dark text-white font-mono text-xs font-bold uppercase shadow-stamped border border-black hover:bg-black transition-all" onclick="closeCaseStudy()">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDITORIAL FOOTER -->
+  <footer class="border-t-4 border-black bg-surface-dark text-white mt-12">
+    <div class="flex flex-col md:flex-row justify-between items-center max-w-5xl mx-auto px-5 py-8 gap-4 text-xs font-mono">
+      <div class="flex items-center gap-2.5">
+        <span class="w-3 h-3 bg-accent border border-black" aria-hidden="true"></span>
+        <span class="font-bold tracking-wider text-sm">OMAR NASSER MAHMOUD</span>
+      </div>
+      <div class="flex flex-wrap items-center gap-5 font-bold">
+        <a class="hover:text-accent transition-colors" href="https://github.com/OmarElHawy" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a class="hover:text-accent transition-colors" href="https://www.linkedin.com/in/omar-nasser-aab951303/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+        <a class="hover:text-accent transition-colors" href="mailto:omarr.elhawyy@gmail.com">Email</a>
+        <a class="hover:text-accent transition-colors" href="https://wa.me/201285407011" rel="noopener noreferrer" target="_blank">WhatsApp</a>
+        <a class="text-accent underline hover:text-white" href="assets/Omar_Nasser_Mahmoud_CV.pdf" download="Omar_Nasser_Mahmoud_CV.pdf">Download Resume</a>
+      </div>
+      <div class="text-gray-400 text-center md:text-right text-[11px]">
+        © 2026 Omar Nasser Mahmoud. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- MOBILE BOTTOM STICKY NAVIGATION BAR -->
+  <nav class="fixed bottom-0 left-0 w-full z-40 md:hidden flex justify-around items-center px-4 py-2.5 bg-canvas/95 backdrop-blur-lg border-t-2 border-black shadow-lg font-mono text-[11px] font-bold" aria-label="Mobile Bottom Navigation">
+    <a class="flex flex-col items-center justify-center text-black py-1" href="#hero">
+      <span class="material-symbols-outlined text-lg" aria-hidden="true">terminal</span>
+      <span>INDEX</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-black py-1" href="#metrics">
+      <span class="material-symbols-outlined text-lg" aria-hidden="true">query_stats</span>
+      <span>PROOF</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-black py-1" href="#work">
+      <span class="material-symbols-outlined text-lg" aria-hidden="true">dataset</span>
+      <span>WORK</span>
+    </a>
+    <a class="flex flex-col items-center justify-center text-black py-1" href="#contact">
+      <span class="material-symbols-outlined text-lg" aria-hidden="true">send</span>
+      <span>CONTACT</span>
+    </a>
+  </nav>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" role="status" aria-live="polite"></div>
+
+    <!-- Interactive Client-side Script -->
+  <script src="js/main.js"></script>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("vILZ4yzOakpawKfuF");
+    })();
+  </script>
+  <!-- Success Popup Modal -->
+  <div id="successModal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/60 backdrop-blur-sm" role="dialog" aria-modal="true" aria-labelledby="successTitle">
+    <div class="bg-surface border-4 border-black rounded-2xl shadow-brutal-lg p-8 max-w-md w-full mx-4 space-y-4 text-center">
+      <div class="w-16 h-16 bg-accent border-2 border-black rounded-full flex items-center justify-center mx-auto">
+        <span class="material-symbols-outlined text-black text-3xl" aria-hidden="true">check</span>
+      </div>
+      <h3 class="anton-heading text-3xl text-black" id="successTitle">MESSAGE SENT!</h3>
+      <p class="text-sm text-ink-soft font-mono">Thanks for reaching out. I'll get back to you within 24 hours.</p>
+      <button onclick="closeSuccessModal()" class="w-full py-3 rounded-lg bg-surface-dark text-white font-mono text-xs font-bold uppercase shadow-stamped border-2 border-black hover:bg-black transition-all">
+        Close
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>

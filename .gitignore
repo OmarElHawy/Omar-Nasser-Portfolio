@@ -34,3 +34,8 @@ extract_css.mjs
 tailwind.config.js
 css/tailwind.input.css
 test_runner.mjs
+mobile_qa.mjs
+check_pages_status.mjs
+verify_*.mjs
+*.log
+

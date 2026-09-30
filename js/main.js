@@ -108,32 +108,32 @@
     ingest: {
       title: "01: Document Ingestion (PDF / DOCX)",
       desc: "Robust extraction supporting multi-page PDF documents and nested tables, filtering extraneous formatting artifacts prior to chunking.",
-      metric: "THROUGHPUT: 14 DOCS/SEC"
+      metric: "PDF / DOCX PARSING"
     },
     chunk: {
       title: "02: Semantic Chunking Strategy",
       desc: "Recursive token splitter with 500 characters and 50 character overlap, preserving paragraph boundaries and markdown headers.",
-      metric: "AVG TOKENS: 120/CHUNK"
+      metric: "RECURSIVE SPLITTING"
     },
     faiss: {
       title: "03: Dense Vector Embedding & FAISS Index",
       desc: "Generating normalized 1,536-dimensional embeddings indexed via FAISS FlatL2 for instantaneous cosine similarity retrieval.",
-      metric: "INDEX QUERY: 38MS"
+      metric: "FAISS VECTOR STORE"
     },
     retrieve: {
       title: "04: LCEL Dynamic Retriever",
       desc: "LangChain LCEL orchestration fetching top-k grounded chunks with similarity scoring and context deduplication.",
-      metric: "RECALL: 94.2%"
+      metric: "TOP-K RETRIEVAL"
     },
     guard: {
       title: "05: Synthesis & Grounding Guardrails",
-      desc: "Deterministic regular expression evaluation and strict context grounding asserting zero unreferenced hallucinated claims.",
-      metric: "FAITHFULNESS: >0.96"
+      desc: "Deterministic regular expression evaluation and strict context grounding that reduces hallucinations with grounding checks and guardrails.",
+      metric: "LCEL GROUNDING"
     },
     serve: {
-      title: "06: Production Serving & Gradio UI",
+      title: "06: End-to-End Serving & Gradio UI",
       desc: "FastAPI endpoint integration backed by LangServe alongside real-time Gradio interactive browser demonstrator.",
-      metric: "LATENCY: ~142MS"
+      metric: "FASTAPI + GRADIO"
     }
   };
 
@@ -212,28 +212,28 @@
     },
     rag: {
       category: "RETRIEVAL-AUGMENTED GENERATION // LANGCHAIN LCEL",
-      title: "SmartDoc Production RAG Agent",
-      solution: "Enterprise document retrieval often hallucinates across lengthy technical manuals. SmartDoc utilizes recursive semantic chunking, normalized dense vector generation, and a high-performance FAISS vector index. The pipeline passes retrieved context chunks into LangChain LCEL with deterministic grounding assertions.",
+      title: "SmartDoc RAG Agent",
+      solution: "Document retrieval often hallucinates across lengthy technical manuals. SmartDoc utilizes recursive semantic chunking, normalized dense vector generation, and a high-performance FAISS vector index. The pipeline passes retrieved context chunks into LangChain LCEL with deterministic grounding assertions.",
       highlights: [
         "Multi-format document parser handling complex tabular PDF layouts and nested DOCX headers",
         "FAISS FlatL2 index normalized with cosine similarity for pinpoint factual recall",
         "Built-in regex & pattern-based safety guardrails checking for out-of-context fabrication",
         "FastAPI and LangServe backend exposing endpoints with telemetry logging response latencies"
       ],
-      metrics: "Faithfulness Grounding Score: > 96% | Mean Vector Retrieval: 38ms | Architecture: LangChain LCEL",
-      lessons: "Heuristic safety guardrails combined with source attribution scoring eliminate hallucinations far more reliably than temperature tuning alone."
+      metrics: "Evaluation: Grounding Checks & Latency | Architecture: LangChain LCEL + FAISS",
+      lessons: "Heuristic safety guardrails combined with source attribution scoring reduce hallucinations with grounding checks and guardrails far more reliably than temperature tuning alone."
     },
     csp: {
       category: "CONSTRAINT SATISFACTION (CSP) // ALGORITHMS",
       title: "Automated Academic Timetable Generator",
       solution: "Modeled multi-faculty university scheduling as an exact Constraint Satisfaction Problem. The engine accommodates multi-dimensional constraints including instructor availability, room seating limits, section requirements, and equipment prerequisites.",
       highlights: [
-        "Eliminated all primary hard conflicts (instructor overlap, classroom capacity violations)",
-        "Formulated greedy heuristic search algorithms with backtracking to converge on valid solutions rapidly",
+        "Centralized constraint validation layer enforcing hard constraints (instructor overlap, classroom capacity violations)",
+        "Formulated a custom greedy heuristic search (backtracking planned as future work) to converge on valid solutions",
         "Excel / CSV ingestion layer with schema validation to sanitize raw academic input data",
         "Automated export of 4 distinct interactive HTML schedule dashboards partitioned by department and faculty"
       ],
-      metrics: "Hard Conflicts: 0 | Execution Time: < 3.2s for 120 Sessions | Output: 4 Responsive HTML Grids",
+      metrics: "Dataset: 4 Undergraduate Levels | Algorithm: Greedy Heuristic | Output: 4 Responsive HTML Grids",
       lessons: "Decoupling constraint validation logic from schedule rendering allows immediate adaptation to new university regulations without core redesigns."
     },
     blood: {
@@ -268,12 +268,12 @@
       solution: "A privacy-first, local AI support ecosystem for e-commerce. Ingests a store's internal FAQ knowledge base into ChromaDB vector store. Ollama runs the embedding and chat models entirely on-premise, eliminating cloud API costs and data privacy concerns. Streamlit provides an intuitive chat interface.",
       highlights: [
         "Built a fully local RAG pipeline with zero API dependencies, ensuring customer data never leaves the premise.",
-        "Context-aware answers pulled directly from the store's FAQ knowledge base, eliminating hallucinations.",
+        "Context-aware answers pulled directly from the store's FAQ knowledge base, reducing hallucinations with grounding checks and guardrails.",
         "Integrated Ollama for local LLM inference and ChromaDB for efficient semantic retrieval.",
         "Deployed with Streamlit for a lightweight, interactive customer-facing chat interface."
       ],
-      metrics: "Deployment: 100% Local | Cloud Cost: $0 | Hallucination: Eliminated via RAG Grounding",
-      lessons: "Local RAG architectures can deliver enterprise-grade customer support without compromising data privacy or incurring recurring cloud costs."
+      metrics: "Deployment: 100% Local | Cloud Cost: $0 | Grounding: Reduces Hallucinations with Guardrails",
+      lessons: "Local RAG architectures can deliver responsive customer support without compromising data privacy or incurring recurring cloud costs."
     }
   };
 
@@ -353,19 +353,73 @@
     }
   });
 
-  // --- Project Inquiry Form Submission Handler (EmailJS) ---
-  function sendEmail(event) {
+  // --- Project Inquiry Form Submission Handler (EmailJS & Formspree) ---
+  // FORMSPREE ENDPOINT PLACEHOLDER:
+  // If you wish to switch from EmailJS to Formspree, paste your Formspree Form ID below (e.g. "xpzgbkqr").
+  // If left empty (""), the form defaults to your configured EmailJS service.
+  const FORMSPREE_ENDPOINT_ID = ""; // <-- PASTE YOUR FORMSPREE ID HERE IF USING FORMSPREE
+
+  async function sendEmail(event) {
     event.preventDefault();
     const form = document.getElementById("contactForm");
-    
-    emailjs.sendForm("service_pa4f4zg", "template_mksm52t", form)
-      .then(function () {
-        form.reset();
-        document.getElementById("successModal").classList.remove("hidden");
-      }, function (error) {
-        alert("Failed to send message. Please email me directly at omarr.elhawyy@gmail.com");
-        console.error("EmailJS Error:", error);
-      });
+    const submitBtn = document.getElementById("inquirySubmitBtn");
+    const originalBtnHtml = submitBtn ? submitBtn.innerHTML : "Send Project Inquiry";
+
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `<span>Sending...</span><span class="material-symbols-outlined text-sm animate-spin">progress_activity</span>`;
+    }
+
+    function handleSuccess() {
+      if (form) form.reset();
+      const modal = document.getElementById("successModal");
+      if (modal) modal.classList.remove("hidden");
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnHtml;
+      }
+    }
+
+    function handleError(err) {
+      console.error("Submission Error:", err);
+      alert("Failed to send message. Please email me directly at omarr.elhawyy@gmail.com");
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalBtnHtml;
+      }
+    }
+
+    // Route 1: Formspree (if endpoint ID provided)
+    if (FORMSPREE_ENDPOINT_ID && FORMSPREE_ENDPOINT_ID.trim() !== "") {
+      try {
+        const formData = new FormData(form);
+        const res = await fetch(`https://formspree.io/f/${FORMSPREE_ENDPOINT_ID.trim()}`, {
+          method: "POST",
+          body: formData,
+          headers: { Accept: "application/json" }
+        });
+        if (res.ok) {
+          handleSuccess();
+        } else {
+          handleError(new Error(`Formspree error: ${res.status}`));
+        }
+      } catch (err) {
+        handleError(err);
+      }
+      return;
+    }
+
+    // Route 2: EmailJS
+    if (typeof emailjs !== "undefined") {
+      emailjs.sendForm("service_pa4f4zg", "template_mksm52t", form)
+        .then(function () {
+          handleSuccess();
+        }, function (error) {
+          handleError(error);
+        });
+    } else {
+      handleError(new Error("EmailJS SDK not loaded"));
+    }
   }
 
   function closeSuccessModal() {
